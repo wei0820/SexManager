@@ -15,25 +15,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="PrH-Qe-G2s">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="A6G-Ks-1I7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="PrH-Qe-G2s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CqU-g9-eob"/>
-                            <constraint firstItem="PrH-Qe-G2s" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LNM-xt-QIV"/>
-                            <constraint firstItem="PrH-Qe-G2s" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Nm6-F8-QCj"/>
-                            <constraint firstItem="PrH-Qe-G2s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tFy-xh-qr7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PrH-Qe-G2s" secondAttribute="trailing" id="xGy-js-Ri9"/>
-                            <constraint firstItem="PrH-Qe-G2s" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yTf-4b-go7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A6G-Ks-1I7" secondAttribute="bottom" id="H62-n3-4nk"/>
+                            <constraint firstItem="A6G-Ks-1I7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HP0-JS-iS2"/>
+                            <constraint firstItem="A6G-Ks-1I7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IIM-Uc-hhU"/>
+                            <constraint firstItem="A6G-Ks-1I7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q51-oH-oYl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A6G-Ks-1I7" secondAttribute="trailing" id="RLz-zW-DBf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
     <resources>
