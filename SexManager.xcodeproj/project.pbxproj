@@ -15,6 +15,7 @@
 		8E2F248423B2132100BE4E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2F248223B2132100BE4E7C /* LaunchScreen.storyboard */; };
 		8E2F248F23B2132100BE4E7C /* SexManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F248E23B2132100BE4E7C /* SexManagerTests.swift */; };
 		8E2F249A23B2132100BE4E7C /* SexManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F249923B2132100BE4E7C /* SexManagerUITests.swift */; };
+		8E2F24AA23B2190800BE4E7C /* mBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F24A923B2190800BE4E7C /* mBasicViewController.swift */; };
 		B554BDE4839AE2E9B1F56AFE /* Pods_SexManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E03C573EDF766BA42C0E43B /* Pods_SexManager.framework */; };
 		B77CAB0557B8A76C1B889FEB /* Pods_SexManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5768623C05776D3E6C121AC7 /* Pods_SexManagerTests.framework */; };
 		B83B43DA1119FAA3E1D166F5 /* Pods_SexManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961D6698EA0517271898569E /* Pods_SexManagerUITests.framework */; };
@@ -59,6 +60,7 @@
 		8E2F249523B2132100BE4E7C /* SexManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SexManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2F249923B2132100BE4E7C /* SexManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexManagerUITests.swift; sourceTree = "<group>"; };
 		8E2F249B23B2132100BE4E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E2F24A923B2190800BE4E7C /* mBasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mBasicViewController.swift; sourceTree = "<group>"; };
 		961D6698EA0517271898569E /* Pods_SexManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SexManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A234A5B6FE5B71FCAA80C079 /* Pods-SexManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManagerTests.release.xcconfig"; path = "Target Support Files/Pods-SexManagerTests/Pods-SexManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 				8E2F248023B2132100BE4E7C /* Assets.xcassets */,
 				8E2F248223B2132100BE4E7C /* LaunchScreen.storyboard */,
 				8E2F248523B2132100BE4E7C /* Info.plist */,
+				8E2F24A923B2190800BE4E7C /* mBasicViewController.swift */,
 			);
 			path = SexManager;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				8E2F247C23B2132000BE4E7C /* ViewController.swift in Sources */,
 				8E2F247823B2132000BE4E7C /* AppDelegate.swift in Sources */,
 				8E2F247A23B2132000BE4E7C /* SceneDelegate.swift in Sources */,
+				8E2F24AA23B2190800BE4E7C /* mBasicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
