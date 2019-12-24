@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F7145C191B606320D566E72 /* Pods_SexManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9851B564B623CDBB9EE555 /* Pods_SexManager.framework */; };
 		8E2F240023B2044A00BE4E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F23FF23B2044A00BE4E7C /* AppDelegate.swift */; };
 		8E2F240223B2044A00BE4E7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F240123B2044A00BE4E7C /* SceneDelegate.swift */; };
 		8E2F240423B2044A00BE4E7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F240323B2044A00BE4E7C /* ContentView.swift */; };
@@ -15,6 +16,8 @@
 		8E2F240C23B2044F00BE4E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2F240A23B2044F00BE4E7C /* LaunchScreen.storyboard */; };
 		8E2F241723B2044F00BE4E7C /* SexManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F241623B2044F00BE4E7C /* SexManagerTests.swift */; };
 		8E2F242223B2044F00BE4E7C /* SexManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F242123B2044F00BE4E7C /* SexManagerUITests.swift */; };
+		C6B2E783931A244D75CF9CAF /* Pods_SexManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC1EEE028E6251C1B1B7088 /* Pods_SexManagerUITests.framework */; };
+		D724ED0677A29520F4CCB311 /* Pods_SexManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555E8BC89DED7921109FA76E /* Pods_SexManagerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3070FFB012E839E2193983EB /* Pods-SexManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-SexManagerUITests/Pods-SexManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46E5A2AF1FE42451A206C48F /* Pods-SexManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManager.release.xcconfig"; path = "Target Support Files/Pods-SexManager/Pods-SexManager.release.xcconfig"; sourceTree = "<group>"; };
+		4BD2434BE1EA07B3F52FCBF6 /* Pods-SexManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-SexManagerTests/Pods-SexManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		555E8BC89DED7921109FA76E /* Pods_SexManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SexManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2F23FC23B2044A00BE4E7C /* SexManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SexManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2F23FF23B2044A00BE4E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E2F240123B2044A00BE4E7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		8E2F241D23B2044F00BE4E7C /* SexManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SexManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2F242123B2044F00BE4E7C /* SexManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexManagerUITests.swift; sourceTree = "<group>"; };
 		8E2F242323B2044F00BE4E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4034F81BFD9C261DB7E709 /* Pods-SexManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManagerTests.release.xcconfig"; path = "Target Support Files/Pods-SexManagerTests/Pods-SexManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCC1EEE028E6251C1B1B7088 /* Pods_SexManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SexManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE1967F4E7AAD3AF4A613BE /* Pods-SexManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManager.debug.xcconfig"; path = "Target Support Files/Pods-SexManager/Pods-SexManager.debug.xcconfig"; sourceTree = "<group>"; };
+		EE9851B564B623CDBB9EE555 /* Pods_SexManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SexManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9428E3C26A46AA48BD959B8 /* Pods-SexManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SexManagerUITests/Pods-SexManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F7145C191B606320D566E72 /* Pods_SexManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D724ED0677A29520F4CCB311 /* Pods_SexManagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B2E783931A244D75CF9CAF /* Pods_SexManagerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87A636CAE6F80E15D8A191CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE9851B564B623CDBB9EE555 /* Pods_SexManager.framework */,
+				555E8BC89DED7921109FA76E /* Pods_SexManagerTests.framework */,
+				BCC1EEE028E6251C1B1B7088 /* Pods_SexManagerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E2F23F323B2044A00BE4E7C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				8E2F241523B2044F00BE4E7C /* SexManagerTests */,
 				8E2F242023B2044F00BE4E7C /* SexManagerUITests */,
 				8E2F23FD23B2044A00BE4E7C /* Products */,
+				D93955155188CDEBA4B454DE /* Pods */,
+				87A636CAE6F80E15D8A191CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +163,20 @@
 			path = SexManagerUITests;
 			sourceTree = "<group>";
 		};
+		D93955155188CDEBA4B454DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDE1967F4E7AAD3AF4A613BE /* Pods-SexManager.debug.xcconfig */,
+				46E5A2AF1FE42451A206C48F /* Pods-SexManager.release.xcconfig */,
+				4BD2434BE1EA07B3F52FCBF6 /* Pods-SexManagerTests.debug.xcconfig */,
+				8E4034F81BFD9C261DB7E709 /* Pods-SexManagerTests.release.xcconfig */,
+				F9428E3C26A46AA48BD959B8 /* Pods-SexManagerUITests.debug.xcconfig */,
+				3070FFB012E839E2193983EB /* Pods-SexManagerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +184,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E2F242623B2044F00BE4E7C /* Build configuration list for PBXNativeTarget "SexManager" */;
 			buildPhases = (
+				810734FCA75F86655F1202AA /* [CP] Check Pods Manifest.lock */,
 				8E2F23F823B2044A00BE4E7C /* Sources */,
 				8E2F23F923B2044A00BE4E7C /* Frameworks */,
 				8E2F23FA23B2044A00BE4E7C /* Resources */,
@@ -160,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E2F242923B2044F00BE4E7C /* Build configuration list for PBXNativeTarget "SexManagerTests" */;
 			buildPhases = (
+				596FF398A49A1BB98D00CD8E /* [CP] Check Pods Manifest.lock */,
 				8E2F240E23B2044F00BE4E7C /* Sources */,
 				8E2F240F23B2044F00BE4E7C /* Frameworks */,
 				8E2F241023B2044F00BE4E7C /* Resources */,
@@ -178,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E2F242C23B2044F00BE4E7C /* Build configuration list for PBXNativeTarget "SexManagerUITests" */;
 			buildPhases = (
+				C4DAB30D0D1E2F647F90C595 /* [CP] Check Pods Manifest.lock */,
 				8E2F241923B2044F00BE4E7C /* Sources */,
 				8E2F241A23B2044F00BE4E7C /* Frameworks */,
 				8E2F241B23B2044F00BE4E7C /* Resources */,
@@ -261,6 +305,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		596FF398A49A1BB98D00CD8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SexManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		810734FCA75F86655F1202AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SexManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4DAB30D0D1E2F647F90C595 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SexManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E2F23F823B2044A00BE4E7C /* Sources */ = {
@@ -432,6 +545,7 @@
 		};
 		8E2F242723B2044F00BE4E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE1967F4E7AAD3AF4A613BE /* Pods-SexManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +566,7 @@
 		};
 		8E2F242823B2044F00BE4E7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E5A2AF1FE42451A206C48F /* Pods-SexManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +587,7 @@
 		};
 		8E2F242A23B2044F00BE4E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD2434BE1EA07B3F52FCBF6 /* Pods-SexManagerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +610,7 @@
 		};
 		8E2F242B23B2044F00BE4E7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E4034F81BFD9C261DB7E709 /* Pods-SexManagerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +633,7 @@
 		};
 		8E2F242D23B2044F00BE4E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9428E3C26A46AA48BD959B8 /* Pods-SexManagerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +654,7 @@
 		};
 		8E2F242E23B2044F00BE4E7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3070FFB012E839E2193983EB /* Pods-SexManagerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
