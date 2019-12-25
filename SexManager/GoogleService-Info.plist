@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>449266103565-m6cama0b06pchjh6d06k5m9m1d9pu0rp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.449266103565-m6cama0b06pchjh6d06k5m9m1d9pu0rp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBmw0nfSgPaNcJfM0YjOLAEakmOEP3sBIM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>449266103565</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jackpan.SexManager</string>
+	<key>PROJECT_ID</key>
+	<string>sexmanager-9092f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sexmanager-9092f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:449266103565:ios:b54b5f50c9dc128dc5ec44</string>
+	<key>DATABASE_URL</key>
+	<string>https://sexmanager-9092f.firebaseio.com</string>
+</dict>
+</plist>
