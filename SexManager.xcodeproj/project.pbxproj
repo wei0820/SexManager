@@ -19,6 +19,7 @@
 		8E2F24AC23B3090800BE4E7C /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F24AB23B3090800BE4E7C /* DescriptionViewController.swift */; };
 		8E2F24AE23B3327900BE4E7C /* MemberCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F24AD23B3327900BE4E7C /* MemberCenterViewController.swift */; };
 		8E2F24B023B3490A00BE4E7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E2F24AF23B3490A00BE4E7C /* GoogleService-Info.plist */; };
+		8E2F24B223B3608C00BE4E7C /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F24B123B3608C00BE4E7C /* ChartViewController.swift */; };
 		B554BDE4839AE2E9B1F56AFE /* Pods_SexManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E03C573EDF766BA42C0E43B /* Pods_SexManager.framework */; };
 		B77CAB0557B8A76C1B889FEB /* Pods_SexManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5768623C05776D3E6C121AC7 /* Pods_SexManagerTests.framework */; };
 		B83B43DA1119FAA3E1D166F5 /* Pods_SexManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961D6698EA0517271898569E /* Pods_SexManagerUITests.framework */; };
@@ -67,6 +68,7 @@
 		8E2F24AB23B3090800BE4E7C /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		8E2F24AD23B3327900BE4E7C /* MemberCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterViewController.swift; sourceTree = "<group>"; };
 		8E2F24AF23B3490A00BE4E7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E2F24B123B3608C00BE4E7C /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		961D6698EA0517271898569E /* Pods_SexManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SexManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A234A5B6FE5B71FCAA80C079 /* Pods-SexManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManagerTests.release.xcconfig"; path = "Target Support Files/Pods-SexManagerTests/Pods-SexManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 				8E2F24A923B2190800BE4E7C /* mBasicViewController.swift */,
 				8E2F24AB23B3090800BE4E7C /* DescriptionViewController.swift */,
 				8E2F24AD23B3327900BE4E7C /* MemberCenterViewController.swift */,
+				8E2F24B123B3608C00BE4E7C /* ChartViewController.swift */,
 			);
 			path = SexManager;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E2F247C23B2132000BE4E7C /* ViewController.swift in Sources */,
+				8E2F24B223B3608C00BE4E7C /* ChartViewController.swift in Sources */,
 				8E2F247823B2132000BE4E7C /* AppDelegate.swift in Sources */,
 				8E2F247A23B2132000BE4E7C /* SceneDelegate.swift in Sources */,
 				8E2F24AC23B3090800BE4E7C /* DescriptionViewController.swift in Sources */,
