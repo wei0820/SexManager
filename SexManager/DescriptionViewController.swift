@@ -12,6 +12,7 @@ class DescriptionViewController: mBasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "簡介與說明"
 
         // Do any additional setup after loading the view.
     }
