@@ -23,6 +23,15 @@ class mBasicViewController: UIViewController, GADBannerViewDelegate  {
         // Do any additional setup after loading the view.
     }
     
+    func setJump(type:String){
+        
+        if let controller = storyboard?.instantiateViewController(withIdentifier: type) {
+                   present(controller, animated: true, completion: nil)
+               }
+        
+    }
+
+    
     func  setBanner(){
         let id = "ca-app-pub-7019441527375550/1083230156"
          adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)

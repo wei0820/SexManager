@@ -18,11 +18,16 @@ class ViewController: mBasicViewController {
     }
     @IBAction func next(_ sender: Any) {
         
-        if let controller = storyboard?.instantiateViewController(withIdentifier: "next") {
-                 present(controller, animated: true, completion: nil)
-             }
+        setJump(type: "next")
+
     }
     
-
+    @IBAction func member(_ sender: Any) {
+            
+        setJump(type: "member")
+        
+        
+    }
+    
 }
 
