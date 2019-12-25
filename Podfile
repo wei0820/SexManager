@@ -23,4 +23,6 @@ pod 'FacebookShare'
 pod 'FirebaseUI'
 pod 'FirebaseUI/Auth'
 pod 'FirebaseUI/Facebook'    
+pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.git'
+
 end
