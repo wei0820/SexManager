@@ -17,5 +17,10 @@ target 'SexManager' do
     # Pods for testing
   end
 pod 'Google-Mobile-Ads-SDK'
-
+pod 'FacebookLogin'
+pod 'FacebookCore'
+pod 'FacebookShare'
+pod 'FirebaseUI'
+pod 'FirebaseUI/Auth'
+pod 'FirebaseUI/Facebook'    
 end
