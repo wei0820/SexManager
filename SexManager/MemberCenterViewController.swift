@@ -13,18 +13,25 @@ import FacebookLogin
 import FacebookCore
 class MemberCenterViewController: mBasicViewController {
     @IBOutlet weak var loginbtn: UIButton!
+    var islogin :Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getLoginStatus()
         // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func login(_ sender: Any) {
-        let loginManager = LoginManager()
-           loginManager.logIn(permissions: [.publicProfile, .userFriends,.email], viewController: self) { result in
-               self.loginManagerDidComplete(result)
-           }
+        if (islogin == false){
+            let loginManager = LoginManager()
+                     loginManager.logIn(permissions: [.publicProfile, .userFriends,.email], viewController: self) { result in
+                         self.loginManagerDidComplete(result)
+                     }
+        }else{
+            logout()
+        }
+      
         
     }
     func loginManagerDidComplete(_ result: LoginResult) {
@@ -59,17 +66,18 @@ class MemberCenterViewController: mBasicViewController {
                     print( Auth.auth().currentUser?.displayName)
                     print( Auth.auth().currentUser?.photoURL)
                     print("==============")
-                    self.loginbtn.isHidden = true
+                    self.loginbtn.setTitle("登出", for: .normal)
+                    self.islogin = true
 
                     
                 }
             }else{
-                loginbtn.isHidden = false
-                
+                self.loginbtn.setTitle("登入", for: .normal)
+                islogin = false
+
         }
-            
+            }
     
-    }
     /*
     // MARK: - Navigation
 
@@ -79,6 +87,14 @@ class MemberCenterViewController: mBasicViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func logout(){
+        do {
+            try Auth.auth().signOut()
+        } catch let error {
+            // handle error here
+            print("Error trying to sign out of Firebase: \(error.localizedDescription)")
+        }
+    }
     func getError(S :String){
           let controller = UIAlertController(title: "發生錯誤", message: S, preferredStyle: .alert)
                      let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
