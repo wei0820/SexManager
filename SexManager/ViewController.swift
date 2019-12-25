@@ -10,12 +10,21 @@ import UIKit
 
 class ViewController: mBasicViewController {
 
+    @IBOutlet weak var descriptionbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
    
     }
+    @IBAction func next(_ sender: Any) {
+        
+        if let controller = storyboard?.instantiateViewController(withIdentifier: "next") {
+          
 
+                 present(controller, animated: true, completion: nil)
+             }
+    }
+    
 
 }
 
