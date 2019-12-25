@@ -16,5 +16,6 @@ target 'SexManager' do
     inherit! :search_paths
     # Pods for testing
   end
+pod 'Google-Mobile-Ads-SDK'
 
 end
