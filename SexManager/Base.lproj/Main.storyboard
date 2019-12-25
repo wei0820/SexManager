@@ -23,28 +23,53 @@
                                     <constraint firstAttribute="width" constant="300" id="e9k-9K-5ux"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbg-m8-KBc">
-                                <rect key="frame" x="164" y="494" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhG-tM-Iu4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEx-r5-7Bs">
-                                <rect key="frame" x="164" y="456" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEx-r5-7Bs">
+                                <rect key="frame" x="37" y="395" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2fe-2x-8eH"/>
+                                    <constraint firstAttribute="height" constant="30" id="lUt-Tf-XZb"/>
+                                </constraints>
+                                <state key="normal" title="會員中心"/>
                                 <connections>
                                     <action selector="member:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6y-ci-cVD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atI-No-QxF">
+                                <rect key="frame" x="15.5" y="357" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O0i-a9-Bul"/>
+                                    <constraint firstAttribute="width" constant="343" id="v82-bW-df4"/>
+                                </constraints>
+                                <state key="normal" title="直接使用"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbg-m8-KBc">
+                                <rect key="frame" x="37" y="433" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2z8-9T-uAO"/>
+                                    <constraint firstAttribute="height" constant="30" id="uTL-j7-4cv"/>
+                                </constraints>
+                                <state key="normal" title="說明與簡介"/>
+                                <connections>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhG-tM-Iu4"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="atI-No-QxF" firstAttribute="centerX" secondItem="LLY-6H-FMu" secondAttribute="centerX" id="Cwa-Vf-qnd"/>
+                            <constraint firstItem="vbg-m8-KBc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="GDJ-3T-R1V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vbg-m8-KBc" secondAttribute="trailing" constant="38" id="MEV-Hr-HeU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LLY-6H-FMu" secondAttribute="trailing" constant="38" id="MO1-yk-CB2"/>
+                            <constraint firstItem="vbg-m8-KBc" firstAttribute="top" secondItem="jEx-r5-7Bs" secondAttribute="bottom" constant="8" id="OMF-87-7Jv"/>
                             <constraint firstItem="LLY-6H-FMu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="OZP-ic-Ndc"/>
+                            <constraint firstItem="atI-No-QxF" firstAttribute="centerX" secondItem="vbg-m8-KBc" secondAttribute="centerX" id="OcJ-kz-cr9"/>
+                            <constraint firstItem="jEx-r5-7Bs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="XqY-xN-rZK"/>
+                            <constraint firstItem="atI-No-QxF" firstAttribute="centerX" secondItem="jEx-r5-7Bs" secondAttribute="centerX" id="cZx-Ke-cKl"/>
+                            <constraint firstItem="jEx-r5-7Bs" firstAttribute="top" secondItem="atI-No-QxF" secondAttribute="bottom" constant="8" id="j9x-dR-Fcd"/>
+                            <constraint firstItem="jEx-r5-7Bs" firstAttribute="top" secondItem="atI-No-QxF" secondAttribute="bottom" constant="8" id="jdq-nF-D6g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jEx-r5-7Bs" secondAttribute="trailing" constant="38" id="tGf-Eg-oBP"/>
                             <constraint firstItem="LLY-6H-FMu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="vae-jD-M9E"/>
+                            <constraint firstItem="atI-No-QxF" firstAttribute="top" secondItem="LLY-6H-FMu" secondAttribute="bottom" constant="37" id="xjF-Hz-00U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
