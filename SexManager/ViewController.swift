@@ -16,6 +16,9 @@ class ViewController: mBasicViewController {
         // Do any additional setup after loading the view.
    
     }
+    @IBAction func chart(_ sender: Any) {
+        setJump(type: "chart")
+    }
     @IBAction func next(_ sender: Any) {
         
         setJump(type: "next")
