@@ -12,7 +12,6 @@ class ChartViewController: mBasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -26,5 +25,47 @@ class ChartViewController: mBasicViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func setRightButton(s: String){
+            // 導覽列右邊按鈕
+            
+            let rightButton = UIBarButtonItem(
+                title:s,
+                style:.plain,
+                target:self,
+                action:#selector(ChartViewController.setting))
+            // 加到導覽列中
+            self.navigationItem.rightBarButtonItem = rightButton
+        }
+        @objc func setting() {
+    //        var isAnonymous = userDefaults.value(forKey: "userID")
+    //        if((isAnonymous) != nil){
+    //            setAlert()
+    //            return
+    //
+    //        }
 
+            
+        }
+    func setLiftButton(s: String){
+            // 導覽列右邊按鈕
+            
+            let rightButton = UIBarButtonItem(
+                title:s,
+                style:.plain,
+                target:self,
+                action:#selector(ChartViewController.setlift))
+            // 加到導覽列中
+        self.navigationItem.leftBarButtonItem = rightButton
+        }
+        @objc func setlift() {
+    //        var isAnonymous = userDefaults.value(forKey: "userID")
+    //        if((isAnonymous) != nil){
+    //            setAlert()
+    //            return
+    //
+    //        }
+
+            
+        }
+    
 }
