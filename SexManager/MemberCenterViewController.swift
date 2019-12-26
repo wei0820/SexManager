@@ -100,4 +100,50 @@ class MemberCenterViewController: mBasicViewController {
                      let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                      controller.addAction(okAction)
                      present(controller, animated: true, completion: nil)
-      }}
+      }
+    
+    func setRightButton(s: String){
+            // 導覽列右邊按鈕
+            
+            let rightButton = UIBarButtonItem(
+                title:s,
+                style:.plain,
+                target:self,
+                action:#selector(ViewController.))
+            // 加到導覽列中
+            self.navigationItem.rightBarButtonItem = rightButton
+        }
+        @objc func setting() {
+    //        var isAnonymous = userDefaults.value(forKey: "userID")
+    //        if((isAnonymous) != nil){
+    //            setAlert()
+    //            return
+    //
+    //        }
+
+            
+        }
+    func setLiftButton(s: String){
+            // 導覽列右邊按鈕
+            
+            let rightButton = UIBarButtonItem(
+                title:s,
+                style:.plain,
+                target:self,
+                action:#selector(ViewController.setlift))
+            // 加到導覽列中
+        self.navigationItem.leftBarButtonItem = rightButton
+        }
+        @objc func setlift() {
+    //        var isAnonymous = userDefaults.value(forKey: "userID")
+    //        if((isAnonymous) != nil){
+    //            setAlert()
+    //            return
+    //
+    //        }
+
+            
+        }
+    
+    
+}

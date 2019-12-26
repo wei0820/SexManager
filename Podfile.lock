@@ -283,6 +283,7 @@ PODS:
   - FirebaseUI/Storage (8.4.0):
     - Firebase/Storage (~> 6.0)
     - SDWebImage (~> 5.0)
+  - FSCalendar (2.8.0)
   - Google-Mobile-Ads-SDK (7.52.0):
     - GoogleAppMeasurement (~> 6.0)
   - GoogleAppMeasurement (6.1.6):
@@ -359,6 +360,7 @@ DEPENDENCIES:
   - FirebaseUI
   - FirebaseUI/Auth
   - FirebaseUI/Facebook
+  - FSCalendar
   - Google-Mobile-Ads-SDK
 
 SPEC REPOS:
@@ -382,6 +384,7 @@ SPEC REPOS:
     - FirebaseFirestore
     - FirebaseStorage
     - FirebaseUI
+    - FSCalendar
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleDataTransport
@@ -426,6 +429,7 @@ SPEC CHECKSUMS:
   FirebaseFirestore: 2e92e977280d63ecbf3fd58bdbfaf9145abb880f
   FirebaseStorage: 046abe9ac4e2a1a0e47d72f536490ffa50896632
   FirebaseUI: 433550cb9e3d03ec7ee2c25f87493f76358d9b68
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   Google-Mobile-Ads-SDK: 62f6244637306cb60a1b4adda067f53224c7a860
   GoogleAppMeasurement: dfe55efa543e899d906309eaaac6ca26d249862f
   GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
@@ -440,6 +444,6 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   SDWebImage: 51ab1ce3ebd20dec6665ae8ba25c928da323db41
 
-PODFILE CHECKSUM: b36f2c5c8eb0e092f450896d0d15852999709da0
+PODFILE CHECKSUM: f5c6841ae16497f592f18ebf241ac635b05fe05c
 
 COCOAPODS: 1.7.5

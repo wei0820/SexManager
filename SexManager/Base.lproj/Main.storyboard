@@ -133,7 +133,24 @@
                     <view key="view" contentMode="scaleToFill" id="ogo-kS-fXI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRL-Er-GYE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="LIO-NF-Q4p"/>
+                                    <constraint firstAttribute="height" constant="44" id="YAK-M5-3rV"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="UpK-Q8-gu7"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kRL-Er-GYE" firstAttribute="leading" secondItem="RUq-0D-EXR" secondAttribute="leading" id="JtS-sE-t7a"/>
+                            <constraint firstItem="kRL-Er-GYE" firstAttribute="top" secondItem="RUq-0D-EXR" secondAttribute="top" id="Ny6-sC-uNr"/>
+                            <constraint firstItem="kRL-Er-GYE" firstAttribute="trailing" secondItem="RUq-0D-EXR" secondAttribute="trailing" id="R6q-87-7nY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RUq-0D-EXR"/>
                     </view>
                 </viewController>
