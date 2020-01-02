@@ -11,6 +11,11 @@ import FSCalendar
 class CalViewController: mBasicViewController ,FSCalendarDelegate,FSCalendarDataSource,FSCalendarDelegateAppearance{
 
     @IBOutlet weak var cal: FSCalendar!
+   var dateFormatter1: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        return formatter
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
 
