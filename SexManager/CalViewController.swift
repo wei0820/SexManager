@@ -16,8 +16,17 @@ class CalViewController: mBasicViewController ,FSCalendarDelegate,FSCalendarData
         formatter.dateFormat = "yyyy/MM/dd"
         return formatter
     }()
+    var dateFormatter2: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        cal.dataSource = self
+        cal.delegate = self
+        cal.locale = Locale(identifier: "zh-TW")
+        cal.allowsMultipleSelection = true
 
         // Do any additional setup after loading the view.
     }
