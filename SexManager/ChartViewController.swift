@@ -28,7 +28,7 @@ class ChartViewController: mBasicViewController {
         aaChartView!.isClearBackgroundColor = true
         aaChartView.delegate = self as! AAChartViewDelegate
         
-        aaChartModel = AAChartModel().chartType(chartType)
+        aaChartModel = AAChartModel().chartType(.column)
         
         
         
