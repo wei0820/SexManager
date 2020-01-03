@@ -194,9 +194,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="MII-tG-Vzf"/>
                     </view>
-                    <connections>
-                        <outlet property="cal" destination="yRU-6C-SyL" id="9d3-c3-wjJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPh-9u-z6B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

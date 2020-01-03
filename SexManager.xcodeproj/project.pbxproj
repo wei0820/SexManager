@@ -69,7 +69,7 @@
 		8E2F24AB23B3090800BE4E7C /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		8E2F24AD23B3327900BE4E7C /* MemberCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterViewController.swift; sourceTree = "<group>"; };
 		8E2F24AF23B3490A00BE4E7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8E2F24B123B3608C00BE4E7C /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		8E2F24B123B3608C00BE4E7C /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ChartViewController.swift; sourceTree = "<group>"; };
 		8E2F24B323B4889F00BE4E7C /* CalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalViewController.swift; sourceTree = "<group>"; };
 		961D6698EA0517271898569E /* Pods_SexManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SexManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A234A5B6FE5B71FCAA80C079 /* Pods-SexManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManagerTests.release.xcconfig"; path = "Target Support Files/Pods-SexManagerTests/Pods-SexManagerTests.release.xcconfig"; sourceTree = "<group>"; };

@@ -17,7 +17,7 @@ class ViewController: mBasicViewController {
    
     }
     @IBAction func chart(_ sender: Any) {
-        setJump(type: "cal")
+        setJump(type: "chart")
     }
     @IBAction func next(_ sender: Any) {
         

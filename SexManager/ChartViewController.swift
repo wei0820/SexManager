@@ -7,12 +7,25 @@
 //
 
 import UIKit
-
+import AAInfographics
 class ChartViewController: mBasicViewController {
+    var aaChartView: AAChartView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        initCharView()
+    }
+    func initCharView(){
+        aaChartView = AAChartView()
+        let width = view.frame.size.width
+        let height = view.frame.size.height
+        aaChartView!.frame = CGRect(x: 0, y: 60, width: width, height: height)
+        aaChartView.contentHeight = height - 20
+        view.addSubview(aaChartView)
+        
+        
+        
     }
     
 
