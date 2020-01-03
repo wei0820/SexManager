@@ -27,10 +27,11 @@ class CalViewController: mBasicViewController ,FSCalendarDelegate,FSCalendarData
         cal.delegate = self
         cal.locale = Locale(identifier: "zh-TW")
         cal.allowsMultipleSelection = true
-
+        cal.swipeToChooseGesture.isEnabled = true
+        cal.appearance.caseOptions = [.headerUsesUpperCase,.weekdayUsesSingleUpperCase]
+        cal.appearance.headerDateFormat = "yyyy年MM月"
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation
