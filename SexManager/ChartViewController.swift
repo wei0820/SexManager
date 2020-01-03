@@ -9,7 +9,9 @@
 import UIKit
 import AAInfographics
 class ChartViewController: mBasicViewController {
+    var chartType: AAChartType!
     var aaChartView: AAChartView!
+    var aaChartModel : AAChartModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,11 @@ class ChartViewController: mBasicViewController {
         aaChartView!.frame = CGRect(x: 0, y: 60, width: width, height: height)
         aaChartView.contentHeight = height - 20
         view.addSubview(aaChartView)
+        aaChartView!.isClearBackgroundColor = true
+        aaChartView.delegate = self as! AAChartViewDelegate
+        
+        aaChartModel = AAChartModel().chartType(chartType)
+        
         
         
         
