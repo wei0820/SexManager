@@ -148,13 +148,19 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="退出"/>
                                             </button>
+                                            <connections>
+                                                <action selector="exit:" destination="oaQ-3I-GS8" id="ahJ-3v-Spd"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="gDm-4I-tdL">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qin-DE-5Yb">
                                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="加入"/>
+                                                <state key="normal" title="工具列"/>
                                             </button>
+                                            <connections>
+                                                <action selector="tool:" destination="oaQ-3I-GS8" id="8og-o4-r8D"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -168,6 +174,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RUq-0D-EXR"/>
                     </view>
+                    <connections>
+                        <outlet property="exitbtn" destination="WpO-UA-JYa" id="8AZ-XA-cNl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IA-OH-DZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

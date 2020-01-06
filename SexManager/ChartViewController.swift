@@ -13,6 +13,11 @@ class ChartViewController: mBasicViewController {
     var aaChartView: AAChartView!
     var aaChartModel : AAChartModel!
 
+    @IBAction func tool(_ sender: Any) {
+    }
+    @IBAction func exit(_ sender: Any) {
+    }
+    @IBOutlet weak var exitbtn: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
