@@ -13,6 +13,7 @@ class ChartViewController: mBasicViewController {
     var aaChartView: AAChartView!
     var aaChartModel : AAChartModel!
     var dayArray = Array<String>()
+    
 
     @IBOutlet weak var exit: UIButton!
     @IBAction func tool(_ sender: Any) {
@@ -55,15 +56,14 @@ class ChartViewController: mBasicViewController {
 //                       .data([3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]),
 //                       ])
         .series([AASeriesElement()
-                        .name("東京")
                         .data([7.0, 6.9, 9.5, 14.5, 18.2])
                         ])
                    .title("城市天氣變化")//圖表主標題
-                .subtitle("2020年09月18日")//圖表副標題
+            .subtitle(DateManager.getDateString())//圖表副標題
                 .inverted(false)//是否翻轉圖形
-                .yAxisTitle("攝氏度")// Y 軸標題
+                .yAxisTitle("分鐘")// Y 軸標題
                 .legendEnabled(true)//是否啟用圖表的圖例(圖表底部的可點擊的小圓點)
-                .tooltipValueSuffix("攝氏度")//浮動提示框單位後綴
+                .tooltipValueSuffix("分鐘")//浮動提示框單位後綴
         .categories(dayArray)
         aaChartView?.aa_drawChartWithChartModel(aaChartModel)
 
@@ -88,8 +88,8 @@ class ChartViewController: mBasicViewController {
     }
 
     func setAlert(){
-        let controller = UIAlertController(title: "設定", message: "請選擇！", preferredStyle: .actionSheet)
-        let names = ["小龍女", "中龍女", "大龍女"]
+        let controller = UIAlertController(title: "選單", message: "請選擇！", preferredStyle: .actionSheet)
+        let names = ["加入", "列表"]
         for name in names {
            let action = UIAlertAction(title: name, style: .default) { (action) in
               print(action.title)
