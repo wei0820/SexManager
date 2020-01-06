@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0DBB6623C3054B007F73F5 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DBB6523C3054B007F73F5 /* DateManager.swift */; };
 		8E2F247823B2132000BE4E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F247723B2132000BE4E7C /* AppDelegate.swift */; };
 		8E2F247A23B2132000BE4E7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F247923B2132000BE4E7C /* SceneDelegate.swift */; };
 		8E2F247C23B2132000BE4E7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F247B23B2132000BE4E7C /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		5A386D174768E52494E91E3C /* Pods-SexManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-SexManagerTests/Pods-SexManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		783CF09FD6B799F9B8DEE02C /* Pods-SexManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-SexManagerUITests/Pods-SexManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7E03C573EDF766BA42C0E43B /* Pods_SexManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SexManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0DBB6523C3054B007F73F5 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		8E2F247423B2132000BE4E7C /* SexManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SexManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2F247723B2132000BE4E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E2F247923B2132000BE4E7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				8E2F24AD23B3327900BE4E7C /* MemberCenterViewController.swift */,
 				8E2F24B123B3608C00BE4E7C /* ChartViewController.swift */,
 				8E2F24B323B4889F00BE4E7C /* CalViewController.swift */,
+				8E0DBB6523C3054B007F73F5 /* DateManager.swift */,
 			);
 			path = SexManager;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				8E2F247A23B2132000BE4E7C /* SceneDelegate.swift in Sources */,
 				8E2F24AC23B3090800BE4E7C /* DescriptionViewController.swift in Sources */,
 				8E2F24AE23B3327900BE4E7C /* MemberCenterViewController.swift in Sources */,
+				8E0DBB6623C3054B007F73F5 /* DateManager.swift in Sources */,
 				8E2F24AA23B2190800BE4E7C /* mBasicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
