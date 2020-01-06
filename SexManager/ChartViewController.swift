@@ -22,16 +22,13 @@ class ChartViewController: mBasicViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        initCharView()
           for i in 1...DateManager.init().countOfDaysInCurrentMonth(){
             dayArray.append(String(i))
             
         }
-        
-        dayArray.forEach { (i) in
-            print(i)
-        }
-        
+        initCharView()
+
+ 
         
     }
     func initCharView(){
@@ -59,7 +56,7 @@ class ChartViewController: mBasicViewController {
 //                       ])
         .series([AASeriesElement()
                         .name("東京")
-                        .data([7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6])
+                        .data([7.0, 6.9, 9.5, 14.5, 18.2])
                         ])
                    .title("城市天氣變化")//圖表主標題
                 .subtitle("2020年09月18日")//圖表副標題
@@ -67,8 +64,7 @@ class ChartViewController: mBasicViewController {
                 .yAxisTitle("攝氏度")// Y 軸標題
                 .legendEnabled(true)//是否啟用圖表的圖例(圖表底部的可點擊的小圓點)
                 .tooltipValueSuffix("攝氏度")//浮動提示框單位後綴
-        .categories(["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])
+        .categories(dayArray)
         aaChartView?.aa_drawChartWithChartModel(aaChartModel)
 
         
