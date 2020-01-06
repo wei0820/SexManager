@@ -8,9 +8,9 @@
 
 import Foundation
 
-class DateManager{
+public class DateManager{
     //计算当月天数
-   func countOfDaysInCurrentMonth() ->Int {
+ public func countOfDaysInCurrentMonth() ->Int {
     
         let calendar = Calendar(identifier:Calendar.Identifier.gregorian)
         let range = (calendar as NSCalendar?)?.range(of: NSCalendar.Unit.day, in: NSCalendar.Unit.month, for: Date())

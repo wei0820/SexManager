@@ -12,6 +12,7 @@ class ChartViewController: mBasicViewController {
     var chartType: AAChartType!
     var aaChartView: AAChartView!
     var aaChartModel : AAChartModel!
+    var dayArray = Array<String>()
 
     @IBOutlet weak var exit: UIButton!
     @IBAction func tool(_ sender: Any) {
@@ -22,6 +23,16 @@ class ChartViewController: mBasicViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         initCharView()
+          for i in 1...DateManager.init().countOfDaysInCurrentMonth(){
+            dayArray.append(String(i))
+            
+        }
+        
+        dayArray.forEach { (i) in
+            print(i)
+        }
+        
+        
     }
     func initCharView(){
         aaChartView = AAChartView()
