@@ -68,54 +68,13 @@ class ChartViewController: mBasicViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    func setRightButton(s: String){
-            // 導覽列右邊按鈕
-            
-            let rightButton = UIBarButtonItem(
-                title:s,
-                style:.plain,
-                target:self,
-                action:#selector(ChartViewController.setting))
-            // 加到導覽列中
-            self.navigationItem.rightBarButtonItem = rightButton
-        }
-        @objc func setting() {
-    //        var isAnonymous = userDefaults.value(forKey: "userID")
-    //        if((isAnonymous) != nil){
-    //            setAlert()
-    //            return
-    //
-    //        }
 
-            
-        }
-    func setLiftButton(s: String){
-            // 導覽列右邊按鈕
-            
-            let rightButton = UIBarButtonItem(
-                title:s,
-                style:.plain,
-                target:self,
-                action:#selector(ChartViewController.setlift))
-            // 加到導覽列中
-        self.navigationItem.leftBarButtonItem = rightButton
-        }
     @IBAction func exit(_ sender: Any) {
         dissmissView()
     }
-    @objc func setlift() {
-    //        var isAnonymous = userDefaults.value(forKey: "userID")
-    //        if((isAnonymous) != nil){
-    //            setAlert()
-    //            return
-    //
-    //        }
 
-            
-        }
-    
     func setAlert(){
-        let controller = UIAlertController(title: "真心話大冒險", message: "請問誰是你的最愛?", preferredStyle: .actionSheet)
+        let controller = UIAlertController(title: "設定", message: "請選擇！", preferredStyle: .actionSheet)
         let names = ["小龍女", "中龍女", "大龍女"]
         for name in names {
            let action = UIAlertAction(title: name, style: .default) { (action) in
