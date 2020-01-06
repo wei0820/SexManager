@@ -30,7 +30,10 @@ class mBasicViewController: UIViewController, GADBannerViewDelegate  {
                }
         
     }
+    func dissmissView(){
+        dismiss(animated: true, completion: nil)
 
+    }
     
     func  setBanner(){
         let id = "ca-app-pub-7019441527375550/1083230156"

@@ -13,11 +13,11 @@ class ChartViewController: mBasicViewController {
     var aaChartView: AAChartView!
     var aaChartModel : AAChartModel!
 
+    @IBOutlet weak var exit: UIButton!
     @IBAction func tool(_ sender: Any) {
+        self.setAlert()
     }
-    @IBAction func exit(_ sender: Any) {
-    }
-    @IBOutlet weak var exitbtn: UIBarButtonItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,8 +27,8 @@ class ChartViewController: mBasicViewController {
         aaChartView = AAChartView()
         let width = view.frame.size.width
         let height = view.frame.size.height
-        aaChartView!.frame = CGRect(x: 0, y: 60, width: width, height: height)
-        aaChartView.contentHeight = height - 20
+        aaChartView!.frame = CGRect(x: 0, y: 75, width: width, height: height)
+        aaChartView.contentHeight = height - 40
         view.addSubview(aaChartView)
         aaChartView!.isClearBackgroundColor = true
         aaChartModel = AAChartModel().chartType(.line)
@@ -100,7 +100,10 @@ class ChartViewController: mBasicViewController {
             // 加到導覽列中
         self.navigationItem.leftBarButtonItem = rightButton
         }
-        @objc func setlift() {
+    @IBAction func exit(_ sender: Any) {
+        dissmissView()
+    }
+    @objc func setlift() {
     //        var isAnonymous = userDefaults.value(forKey: "userID")
     //        if((isAnonymous) != nil){
     //            setAlert()
@@ -110,5 +113,19 @@ class ChartViewController: mBasicViewController {
 
             
         }
+    
+    func setAlert(){
+        let controller = UIAlertController(title: "真心話大冒險", message: "請問誰是你的最愛?", preferredStyle: .actionSheet)
+        let names = ["小龍女", "中龍女", "大龍女"]
+        for name in names {
+           let action = UIAlertAction(title: name, style: .default) { (action) in
+              print(action.title)
+           }
+           controller.addAction(action)
+        }
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        controller.addAction(cancelAction)
+        present(controller, animated: true, completion: nil)
+    }
     
 }
