@@ -61,7 +61,7 @@ class MemberCenterViewController: mBasicViewController {
                         return
                     }
                     // User is signed in
-                    
+                    self.userDefaults.set(accessToken.tokenString, forKey: "token")
                     print(accessToken.tokenString)
                     
                     print( Auth.auth().currentUser?.displayName)

@@ -10,6 +10,7 @@ import UIKit
 import GoogleMobileAds
 class mBasicViewController: UIViewController, GADBannerViewDelegate  {
     var adBannerView: GADBannerView?
+    let userDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()

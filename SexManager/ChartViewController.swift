@@ -8,11 +8,14 @@
 
 import UIKit
 import AAInfographics
+import Firebase
+import FirebaseAuth
 class ChartViewController: mBasicViewController {
     var chartType: AAChartType!
     var aaChartView: AAChartView!
     var aaChartModel : AAChartModel!
     var dayArray = Array<String>()
+    var dateArray = Array<String>()
     
 
     @IBOutlet weak var exit: UIButton!
@@ -113,13 +116,38 @@ class ChartViewController: mBasicViewController {
         }
 
         let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
-            let phone = Int((controller.textFields?[0].text)!)
-            
-           print(phone)
+            let phone = (controller.textFields?[0].text)!
+//            self.dateArray.append(phone)
+            self.addFireBaseDate()
         }
         controller.addAction(okAction)
         let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
         controller.addAction(cancelAction)
         present(controller, animated: true, completion: nil)
+    }
+    
+    func  addFireBaseDate(){
+        let reference: DatabaseReference! = Database.database().reference().child("movieReviews").child("userId-00002")
+        let childRef = reference.childByAutoId() // 隨機生成的節點唯一識別碼，用來當儲存時的key值
+        let dateReviewReference = reference.child("11111")
+
+    
+        
+        // 新增節點資料
+            var dateReview: [String : AnyObject] = [String : AnyObject]()
+            dateReview["movieId"] = "0000001" as AnyObject
+            dateReview["movieName"] = "玩命關頭8" as AnyObject
+            dateReview["movieReview"] = "緊張刺激，不可不看！" as AnyObject
+            dateReview["createDate"] = "20170424" as AnyObject
+        dateReviewReference.updateChildValues(dateReview) { (err, ref) in
+            if err != nil{
+                print("err： \(err!)")
+                return
+            }
+            
+            print(ref.description())
+        }
+
+        
     }
 }
