@@ -92,7 +92,10 @@ class ChartViewController: mBasicViewController {
         let names = ["加入", "列表"]
         for name in names {
            let action = UIAlertAction(title: name, style: .default) { (action) in
-              print(action.title)
+            if (action.title == "加入"){
+                self.addAlert()
+                
+            }
            }
            controller.addAction(action)
         }
@@ -107,14 +110,10 @@ class ChartViewController: mBasicViewController {
            textField.placeholder = "電話"
            textField.keyboardType = UIKeyboardType.phonePad
         }
-        controller.addTextField { (textField) in
-           textField.placeholder = "密碼"
-           textField.isSecureTextEntry = true
-        }
+
         let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
            let phone = controller.textFields?[0].text
-           let password = controller.textFields?[1].text
-           print(phone, password)
+           print(phone)
         }
         controller.addAction(okAction)
         let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
