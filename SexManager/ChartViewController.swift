@@ -118,7 +118,7 @@ class ChartViewController: mBasicViewController {
         let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
             let phone = (controller.textFields?[0].text)!
 //            self.dateArray.append(phone)
-            self.addFireBaseDate()
+//            self.addFireBaseDate()
         }
         controller.addAction(okAction)
         let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
@@ -126,7 +126,7 @@ class ChartViewController: mBasicViewController {
         present(controller, animated: true, completion: nil)
     }
     
-    func  addFireBaseDate(){
+    func  addFireBaseDate(min: String , Type:String){
         var  id = userDefaults.value(forKey: "token")
         if ( id == nil){
            id =  UiManager.getUUID()
@@ -139,10 +139,10 @@ class ChartViewController: mBasicViewController {
         
         // 新增節點資料
             var dateReview: [String : AnyObject] = [String : AnyObject]()
-            dateReview["movieId"] = "0000001" as AnyObject
-            dateReview["movieName"] = "玩命關頭8" as AnyObject
-            dateReview["movieReview"] = "緊張刺激，不可不看！" as AnyObject
-            dateReview["createDate"] = "20170424" as AnyObject
+            dateReview["Id"] = id as AnyObject
+            dateReview["Minute"] = min  as AnyObject
+            dateReview["Type"] = Type as AnyObject
+        dateReview["createDate"] = DateManager.getDateString2() as AnyObject
         dateReviewReference.updateChildValues(dateReview) { (err, ref) in
             if err != nil{
                 print("err： \(err!)")
