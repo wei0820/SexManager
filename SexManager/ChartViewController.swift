@@ -105,14 +105,16 @@ class ChartViewController: mBasicViewController {
     }
     
     func addAlert(){
-        let controller = UIAlertController(title: "登入", message: "請輸入你在 B12 星球的電話和密碼", preferredStyle: .alert)
+        let controller = UIAlertController(title: "數值", message: "請輸入資料", preferredStyle: .alert)
         controller.addTextField { (textField) in
-           textField.placeholder = "電話"
+           textField.placeholder = "分鐘"
            textField.keyboardType = UIKeyboardType.phonePad
+            textField.borderStyle = .roundedRect
         }
 
         let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
-           let phone = controller.textFields?[0].text
+            let phone = Int((controller.textFields?[0].text)!)
+            
            print(phone)
         }
         controller.addAction(okAction)
