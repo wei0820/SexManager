@@ -55,7 +55,7 @@ class ChartViewController: mBasicViewController {
 //                       .name("倫敦")
 //                       .data([3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]),
 //                       ])
-        .series([AASeriesElement()
+            .series([AASeriesElement()
                         .data([7.0, 6.9, 9.5, 14.5, 18.2])
                         ])
                    .title("城市天氣變化")//圖表主標題
@@ -101,4 +101,24 @@ class ChartViewController: mBasicViewController {
         present(controller, animated: true, completion: nil)
     }
     
+    func addAlert(){
+        let controller = UIAlertController(title: "登入", message: "請輸入你在 B12 星球的電話和密碼", preferredStyle: .alert)
+        controller.addTextField { (textField) in
+           textField.placeholder = "電話"
+           textField.keyboardType = UIKeyboardType.phonePad
+        }
+        controller.addTextField { (textField) in
+           textField.placeholder = "密碼"
+           textField.isSecureTextEntry = true
+        }
+        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
+           let phone = controller.textFields?[0].text
+           let password = controller.textFields?[1].text
+           print(phone, password)
+        }
+        controller.addAction(okAction)
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        controller.addAction(cancelAction)
+        present(controller, animated: true, completion: nil)
+    }
 }
