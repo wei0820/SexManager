@@ -127,13 +127,13 @@ class ChartViewController: mBasicViewController {
     }
     
     func  addFireBaseDate(){
-        var  id :String = self.userDefaults.value(forKey: "token") as! String
-        if (id.isEmpty && id == nil){
+        var  id = userDefaults.value(forKey: "token")
+        if ( id == nil){
            id =  UiManager.getUUID()
         }
-        let reference: DatabaseReference! = Database.database().reference().child("movieReviews").child(id)
+        let reference: DatabaseReference! = Database.database().reference().child("movieReviews").child(id as! String)
         let childRef = reference.childByAutoId() // 隨機生成的節點唯一識別碼，用來當儲存時的key值
-        let dateReviewReference = reference.child("11111")
+        let dateReviewReference = reference.child(DateManager.getDateString2())
 
     
         
