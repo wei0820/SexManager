@@ -10,14 +10,39 @@ import UIKit
 import AAInfographics
 import Firebase
 import FirebaseAuth
-class ChartViewController: mBasicViewController {
+class ChartViewController: mBasicViewController,UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return choices.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return choices[row]
+    }
+        
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if row == 0 {
+            typeValue = "Toyota"
+        } else if row == 1 {
+            typeValue = "Honda"
+        } else if row == 2 {
+            typeValue = "Chevy"
+        } else if row == 3 {
+            typeValue = "Audi"
+        } else if row == 4 {
+            typeValue = "BMW"
+        }
+    }
     var chartType: AAChartType!
     var aaChartView: AAChartView!
     var aaChartModel : AAChartModel!
     var dayArray = Array<String>()
     var dateArray = Array<String>()
-    
-
+    var choices = ["","",""]
+    var pickerView = UIPickerView()
+       var typeValue = String()
     @IBOutlet weak var exit: UIButton!
     @IBAction func tool(_ sender: Any) {
         self.setAlert()
@@ -110,6 +135,11 @@ class ChartViewController: mBasicViewController {
     func addAlert(){
         let controller = UIAlertController(title: "數值", message: "請輸入資料", preferredStyle: .alert)
         controller.addTextField { (textField) in
+              textField.placeholder = "分鐘"
+              textField.keyboardType = UIKeyboardType.phonePad
+               textField.borderStyle = .roundedRect
+           }
+        controller.addTextField { (textField) in
            textField.placeholder = "分鐘"
            textField.keyboardType = UIKeyboardType.phonePad
             textField.borderStyle = .roundedRect
@@ -120,6 +150,7 @@ class ChartViewController: mBasicViewController {
 //            self.dateArray.append(phone)
 //            self.addFireBaseDate()
         }
+        
         controller.addAction(okAction)
         let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
         controller.addAction(cancelAction)
