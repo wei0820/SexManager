@@ -27,4 +27,6 @@ pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.
 pod 'FSCalendar'
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
+pod 'RLBAlertsPickers', '~> 1.1.1'
+
 end

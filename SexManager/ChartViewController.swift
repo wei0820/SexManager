@@ -10,7 +10,7 @@ import UIKit
 import AAInfographics
 import Firebase
 import FirebaseAuth
-class ChartViewController: mBasicViewController,UIPickerViewDataSource {
+class ChartViewController: mBasicViewController,UIPickerViewDataSource ,UIPickerViewDelegate{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -40,7 +40,7 @@ class ChartViewController: mBasicViewController,UIPickerViewDataSource {
     var aaChartModel : AAChartModel!
     var dayArray = Array<String>()
     var dateArray = Array<String>()
-    var choices = ["","",""]
+    var choices = ["1","2","3","4","5"]
     var pickerView = UIPickerView()
        var typeValue = String()
     @IBOutlet weak var exit: UIButton!
@@ -133,28 +133,37 @@ class ChartViewController: mBasicViewController,UIPickerViewDataSource {
     }
     
     func addAlert(){
-        let controller = UIAlertController(title: "數值", message: "請輸入資料", preferredStyle: .alert)
-        controller.addTextField { (textField) in
-              textField.placeholder = "分鐘"
-              textField.keyboardType = UIKeyboardType.phonePad
-               textField.borderStyle = .roundedRect
-           }
-        controller.addTextField { (textField) in
-           textField.placeholder = "分鐘"
-           textField.keyboardType = UIKeyboardType.phonePad
-            textField.borderStyle = .roundedRect
-        }
+        let controller = UIAlertController(title: "數值", message: "請輸入資料", preferredStyle: .actionSheet)
+        controller.isModalInPopover = true
 
-        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
-            let phone = (controller.textFields?[0].text)!
-//            self.dateArray.append(phone)
-//            self.addFireBaseDate()
-        }
-        
-        controller.addAction(okAction)
-        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
-        controller.addAction(cancelAction)
-        present(controller, animated: true, completion: nil)
+//        controller.addTextField { (textField) in
+//              textField.placeholder = "分鐘"
+//              textField.keyboardType = UIKeyboardType.phonePad
+//               textField.borderStyle = .roundedRect
+//           }
+
+        pickerView.frame = CGRect(x: 10, y: 0, width: 250, height: 250);
+             pickerView.dataSource = self
+             pickerView.delegate = self
+        controller.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+         controller.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+             
+             print("You selected " + self.typeValue )
+         
+         }))
+         self.present(controller,animated: true, completion: nil )
+        controller.view.addSubview(pickerView)
+
+//        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
+////            let phone = (controller.textFields?[0].text)!
+////            self.dateArray.append(phone)
+////            self.addFireBaseDate()
+//        }
+//
+//        controller.addAction(okAction)
+//        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+//        controller.addAction(cancelAction)
+//        present(controller, animated: true, completion: nil)
     }
     
     func  addFireBaseDate(min: String , Type:String){
