@@ -133,13 +133,107 @@
                     <view key="view" contentMode="scaleToFill" id="oY6-EM-fvQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="類型：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEs-LQ-YjJ">
+                                <rect key="frame" x="16" y="39" width="52" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="Xlg-vv-i1X"/>
+                                    <constraint firstAttribute="height" constant="21" id="arr-od-k9J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5w-fi-VP3">
+                                <rect key="frame" x="16" y="68" width="343" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="NOt-A5-7fp"/>
+                                    <constraint firstAttribute="height" constant="103" id="j2S-fW-bb5"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地點：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdV-eA-BcY">
+                                <rect key="frame" x="16" y="205" width="52" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4HK-Bf-gEb"/>
+                                    <constraint firstAttribute="width" constant="52" id="8Hy-ux-bCk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bD-2j-Zxm">
+                                <rect key="frame" x="16" y="234" width="343" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="MsO-dA-Fi9"/>
+                                    <constraint firstAttribute="width" constant="343" id="e6N-Ug-Ku1"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間(分鐘)：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXW-dT-dvX">
+                                <rect key="frame" x="16" y="390" width="99" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="0GX-bY-K5t"/>
+                                    <constraint firstAttribute="height" constant="21" id="nPi-fF-Luv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSf-iL-heM">
+                                <rect key="frame" x="16" y="437" width="343" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="7pk-ah-gnz"/>
+                                    <constraint firstAttribute="width" constant="343" id="eDS-Im-sV7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="139-kG-jG5">
+                                <rect key="frame" x="220" y="515" width="139" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="DFH-DV-6Eo"/>
+                                    <constraint firstAttribute="height" constant="30" id="yhv-o4-mXo"/>
+                                </constraints>
+                                <state key="normal" title="取消"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3k-SO-MlM">
+                                <rect key="frame" x="16" y="515" width="131" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ncp-Um-Z67"/>
+                                    <constraint firstAttribute="width" constant="131" id="hCI-ca-n4h"/>
+                                </constraints>
+                                <state key="normal" title="加入"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="epg-1b-p2l" firstAttribute="trailing" secondItem="139-kG-jG5" secondAttribute="trailing" constant="16" id="2JM-a6-C0t"/>
+                            <constraint firstItem="lXW-dT-dvX" firstAttribute="top" secondItem="0bD-2j-Zxm" secondAttribute="bottom" constant="46" id="2dz-2R-4RQ"/>
+                            <constraint firstItem="epg-1b-p2l" firstAttribute="trailing" secondItem="l3k-SO-MlM" secondAttribute="trailing" constant="228" id="A64-bf-nsM"/>
+                            <constraint firstItem="epg-1b-p2l" firstAttribute="trailing" secondItem="jSf-iL-heM" secondAttribute="trailing" constant="16" id="Aet-co-8HP"/>
+                            <constraint firstItem="jSf-iL-heM" firstAttribute="leading" secondItem="epg-1b-p2l" secondAttribute="leading" constant="16" id="C5K-U4-tJX"/>
+                            <constraint firstItem="0bD-2j-Zxm" firstAttribute="leading" secondItem="epg-1b-p2l" secondAttribute="leading" constant="16" id="Dda-RT-4dS"/>
+                            <constraint firstItem="sdV-eA-BcY" firstAttribute="top" secondItem="Z5w-fi-VP3" secondAttribute="bottom" constant="34" id="Ih1-ul-10P"/>
+                            <constraint firstItem="IEs-LQ-YjJ" firstAttribute="top" secondItem="epg-1b-p2l" secondAttribute="top" constant="39" id="OPX-Ad-p9O"/>
+                            <constraint firstItem="epg-1b-p2l" firstAttribute="trailing" secondItem="0bD-2j-Zxm" secondAttribute="trailing" constant="16" id="Pbr-Zq-IAq"/>
+                            <constraint firstItem="IEs-LQ-YjJ" firstAttribute="leading" secondItem="epg-1b-p2l" secondAttribute="leading" constant="16" id="SEF-Fu-oIo"/>
+                            <constraint firstItem="jSf-iL-heM" firstAttribute="top" secondItem="lXW-dT-dvX" secondAttribute="bottom" constant="26" id="Tin-ZQ-eAY"/>
+                            <constraint firstItem="lXW-dT-dvX" firstAttribute="leading" secondItem="epg-1b-p2l" secondAttribute="leading" constant="16" id="WUn-HQ-cM9"/>
+                            <constraint firstItem="Z5w-fi-VP3" firstAttribute="top" secondItem="IEs-LQ-YjJ" secondAttribute="bottom" constant="8" id="apI-sh-OuT"/>
+                            <constraint firstItem="epg-1b-p2l" firstAttribute="trailing" secondItem="Z5w-fi-VP3" secondAttribute="trailing" constant="16" id="dwc-fI-rQJ"/>
+                            <constraint firstItem="Z5w-fi-VP3" firstAttribute="leading" secondItem="epg-1b-p2l" secondAttribute="leading" constant="16" id="fBF-d9-LjH"/>
+                            <constraint firstItem="139-kG-jG5" firstAttribute="leading" secondItem="epg-1b-p2l" secondAttribute="leading" constant="220" id="k0H-wh-elk"/>
+                            <constraint firstItem="l3k-SO-MlM" firstAttribute="leading" secondItem="epg-1b-p2l" secondAttribute="leading" constant="16" id="kAM-Vb-Xf2"/>
+                            <constraint firstItem="139-kG-jG5" firstAttribute="top" secondItem="l3k-SO-MlM" secondAttribute="bottom" constant="-30" id="rx8-3r-fSd"/>
+                            <constraint firstItem="0bD-2j-Zxm" firstAttribute="top" secondItem="sdV-eA-BcY" secondAttribute="bottom" constant="8" id="scd-gZ-CnP"/>
+                            <constraint firstItem="l3k-SO-MlM" firstAttribute="top" secondItem="jSf-iL-heM" secondAttribute="bottom" constant="44" id="wmh-Om-EOJ"/>
+                            <constraint firstItem="sdV-eA-BcY" firstAttribute="leading" secondItem="epg-1b-p2l" secondAttribute="leading" constant="16" id="xtn-cT-DOK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="epg-1b-p2l"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5US-NB-Hm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-892" y="-1478"/>
+            <point key="canvasLocation" x="-892" y="-1478.4107946026988"/>
         </scene>
         <!--Chart View Controller-->
         <scene sceneID="CRd-mH-sVq">
