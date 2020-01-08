@@ -126,6 +126,21 @@
             </objects>
             <point key="canvasLocation" x="1151.2" y="247.82608695652175"/>
         </scene>
+        <!--Add Data View Controller-->
+        <scene sceneID="LeR-Wm-k7h">
+            <objects>
+                <viewController storyboardIdentifier="addData" id="zth-Hg-uTf" customClass="AddDataViewController" customModule="SexManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oY6-EM-fvQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="epg-1b-p2l"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5US-NB-Hm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-892" y="-1478"/>
+        </scene>
         <!--Chart View Controller-->
         <scene sceneID="CRd-mH-sVq">
             <objects>
