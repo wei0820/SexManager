@@ -7,12 +7,13 @@
 //
 
 import UIKit
-
 class AddDataViewController: mBasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -27,4 +28,4 @@ class AddDataViewController: mBasicViewController {
     }
     */
 
-}
+

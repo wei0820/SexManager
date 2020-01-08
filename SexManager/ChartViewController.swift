@@ -95,6 +95,7 @@ class ChartViewController: mBasicViewController{
            let action = UIAlertAction(title: name, style: .default) { (action) in
             if (action.title == "加入"){
                 self.setJump(type: "addData")
+    
                 
             }
            }
