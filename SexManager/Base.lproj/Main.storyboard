@@ -202,6 +202,9 @@
                                     <constraint firstAttribute="width" constant="131" id="hCI-ca-n4h"/>
                                 </constraints>
                                 <state key="normal" title="加入"/>
+                                <connections>
+                                    <action selector="addButton:" destination="zth-Hg-uTf" eventType="touchUpInside" id="u3L-Om-rNo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -230,6 +233,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="epg-1b-p2l"/>
                     </view>
+                    <connections>
+                        <outlet property="mPlacePicker" destination="0bD-2j-Zxm" id="LBH-yD-fTq"/>
+                        <outlet property="mTimeText" destination="jSf-iL-heM" id="U2P-7S-4Bb"/>
+                        <outlet property="mTypePicker" destination="Z5w-fi-VP3" id="OW5-e7-Vq1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5US-NB-Hm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,8 +7,21 @@
 //
 
 import UIKit
-class AddDataViewController: mBasicViewController {
-
+class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+    }
+    
+    @IBAction func addButton(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var mTimeText: UITextField!
+    @IBOutlet weak var mPlacePicker: UIPickerView!
+    @IBOutlet weak var mTypePicker: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
