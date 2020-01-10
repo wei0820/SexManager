@@ -68,7 +68,6 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         mTimeText.delegate = self
         
         
-        
 
 
         }
