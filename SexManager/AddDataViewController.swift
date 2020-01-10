@@ -14,9 +14,9 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        var countrows : Int = age.count
+        var countrows : Int = type.count
           if pickerView == mPlacePicker {
-              countrows = self.Gender.count
+              countrows = self.place.count
           }
 
           return countrows
@@ -24,10 +24,10 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
           if pickerView == mTypePicker {
-              let titleRow = age[row]
+              let titleRow = type[row]
                return titleRow
           } else if pickerView == mPlacePicker {
-              let titleRow = Gender[row]
+              let titleRow = place[row]
               return titleRow
           }
 
@@ -36,17 +36,17 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
 
       func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
           if pickerView == mTypePicker {
-            mTypeLabel.text = self.age[row]
+            mTypeLabel.text = self.type[row]
             
           } else if pickerView == mPlacePicker {
-            mPlaceLabel.text = self.Gender[row]
+            mPlaceLabel.text = self.place[row]
             
           }
       }
     @IBAction func addButton(_ sender: Any) {
     }
-    var age = ["10-20", "20-30", "30-40"]
-    var Gender = ["Male", "Female"]
+    var type = ["10-20", "20-30", "30-40"]
+    var place = ["Male", "Female"]
     @IBOutlet weak var mTypeLabel: UILabel!
     @IBOutlet weak var mPlaceLabel: UILabel!
     
