@@ -66,5 +66,9 @@
     <key>CFBundleURLTypes</key> <array> <dict> <key>CFBundleURLSchemes</key> <array> <string>fb299626724275391</string> </array> </dict> </array> <key>FacebookAppID</key> <string>299626724275391</string> <key>FacebookDisplayName</key> <string>SexManager</string>
 
     <key>CFBundleURLTypes</key> <array> <dict> <key>CFBundleURLSchemes</key> <array> <string>fb299626724275391</string> </array> </dict> </array> <key>FacebookAppID</key> <string>299626724275391</string> <key>FacebookDisplayName</key> <string>SexManager</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+    <string>line</string>
+    </array>
 </dict>
 </plist>
