@@ -64,6 +64,7 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         mTimeText.borderStyle = .roundedRect
         mTimeText.clearButtonMode = .whileEditing
         mTimeText.returnKeyType = .done
+        mTimeText.keyboardAppearance = .alert
         mTimeText.delegate = self
         
         
