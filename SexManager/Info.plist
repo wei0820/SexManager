@@ -62,13 +62,31 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-
-    <key>CFBundleURLTypes</key> <array> <dict> <key>CFBundleURLSchemes</key> <array> <string>fb299626724275391</string> </array> </dict> </array> <key>FacebookAppID</key> <string>299626724275391</string> <key>FacebookDisplayName</key> <string>SexManager</string>
-
-    <key>CFBundleURLTypes</key> <array> <dict> <key>CFBundleURLSchemes</key> <array> <string>fb299626724275391</string> </array> </dict> </array> <key>FacebookAppID</key> <string>299626724275391</string> <key>FacebookDisplayName</key> <string>SexManager</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-    <string>line</string>
-    </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb299626724275391</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>299626724275391</string>
+	<key>FacebookDisplayName</key>
+	<string>SexManager</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>line</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+	<key>Privacy — Location When In Use Usage Description</key>
+	<string>需要您的授權</string>
+	<key>Privacy — Location Always and When In Use Usage Description
+</key>
+	<string>需要您的授權</string>
 </dict>
 </plist>

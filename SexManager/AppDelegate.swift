@@ -22,6 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         window?.makeKeyAndVisible()
+        
+      // 在程式一啟動即詢問使用者是否接受圖文(alert)、聲音(sound)、數字(badge)三種類型的通知
+              UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge, .carPlay], completionHandler: { (granted, error) in
+                  if granted {
+                      print("允許")
+                  } else {
+                      print("不允許")
+                  }
+              })
         return true
     }
 
