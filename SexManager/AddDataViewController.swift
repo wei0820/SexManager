@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
         
@@ -64,14 +64,30 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         mTimeText.borderStyle = .roundedRect
         mTimeText.clearButtonMode = .whileEditing
         mTimeText.returnKeyType = .done
+        mTimeText.delegate = self
         
         
         
 
 
         }
+    
+
+       // 結束編輯狀態(意指完成輸入或離開焦點)
+       func textFieldDidEndEditing(textField: UITextField) {
+        print("textFieldDidEndEditing:" + textField.text!)
+       }
+    
+       // 按下Return後會反應的事件
+       func textFieldShouldReturn(textField: UITextField) -> Bool {
+           //利用此方式讓按下Return後會Toogle 鍵盤讓它消失
+           textField.resignFirstResponder()
+           print("按下Return")
+           return false
+       }
         // Do any additional setup after loading the view.
     }
+    
     
 
 
