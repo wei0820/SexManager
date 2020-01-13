@@ -23,7 +23,7 @@ class NotificationManager{
          */
         let content = UNMutableNotificationContent()
         content.title = appName!
-        content.subtitle = "subtitle：法蘭克"
+        content.subtitle =  DateManager.getDateString2()
         content.body = "body：法蘭克的 iOS 世界"
         content.badge = 1
         content.sound = .default
@@ -43,7 +43,7 @@ class NotificationManager{
 
         let content = UNMutableNotificationContent()
                content.title = appName!
-               content.subtitle = "subtitle：法蘭克"
+               content.subtitle =  DateManager.getDateString2()
                content.body = "body：法蘭克的IOS世界"
                content.badge = 1
                content.sound = UNNotificationSound.default
