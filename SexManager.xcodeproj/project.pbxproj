@@ -13,6 +13,7 @@
 		8E0DBB6C23C840B4007F73F5 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DBB6B23C840B3007F73F5 /* NotificationManager.swift */; };
 		8E0DBB6E23C858A4007F73F5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DBB6D23C858A4007F73F5 /* LocationManager.swift */; };
 		8E0DBB7023CC4146007F73F5 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DBB6F23CC4146007F73F5 /* FirebaseManager.swift */; };
+		8E0DBB7423CC5C32007F73F5 /* NotificationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0DBB7323CC5C32007F73F5 /* NotificationIcon.png */; };
 		8E2F247823B2132000BE4E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F247723B2132000BE4E7C /* AppDelegate.swift */; };
 		8E2F247A23B2132000BE4E7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F247923B2132000BE4E7C /* SceneDelegate.swift */; };
 		8E2F247C23B2132000BE4E7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F247B23B2132000BE4E7C /* ViewController.swift */; };
@@ -63,6 +64,7 @@
 		8E0DBB6B23C840B3007F73F5 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		8E0DBB6D23C858A4007F73F5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		8E0DBB6F23CC4146007F73F5 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		8E0DBB7323CC5C32007F73F5 /* NotificationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NotificationIcon.png; path = Assets.xcassets/AppIcon.appiconset/NotificationIcon.png; sourceTree = "<group>"; };
 		8E2F247423B2132000BE4E7C /* SexManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SexManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2F247723B2132000BE4E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E2F247923B2132000BE4E7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		8E2F247623B2132000BE4E7C /* SexManager */ = {
 			isa = PBXGroup;
 			children = (
+				8E0DBB7323CC5C32007F73F5 /* NotificationIcon.png */,
 				8E2F24AF23B3490A00BE4E7C /* GoogleService-Info.plist */,
 				8E2F247723B2132000BE4E7C /* AppDelegate.swift */,
 				8E2F247923B2132000BE4E7C /* SceneDelegate.swift */,
@@ -317,6 +320,7 @@
 				8E2F24B023B3490A00BE4E7C /* GoogleService-Info.plist in Resources */,
 				8E2F248123B2132100BE4E7C /* Assets.xcassets in Resources */,
 				8E2F247F23B2132000BE4E7C /* Main.storyboard in Resources */,
+				8E0DBB7423CC5C32007F73F5 /* NotificationIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

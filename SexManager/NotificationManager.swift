@@ -34,6 +34,29 @@ class NotificationManager{
         })
     }
     
+   static func addPhotoNotification(){
+        
+        let content = UNMutableNotificationContent()
+               content.title = "title：測試本地通知"
+               content.subtitle = "subtitle：法蘭克"
+               content.body = "body：法蘭克的IOS世界"
+               content.badge = 1
+               content.sound = UNNotificationSound.default
+               
+               // 設置通知的圖片
+               let imageURL: URL = Bundle.main.url(forResource: "NotificationIcon", withExtension: "png")!
+               let attachment = try! UNNotificationAttachment(identifier: "image", url: imageURL, options: nil)
+               content.attachments = [attachment]
+               
+               let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+              
+               let request = UNNotificationRequest(identifier: "notification", content: content, trigger: trigger)
+               
+               UNUserNotificationCenter.current().add(request, withCompletionHandler: {error in
+                   print("成功建立通知...")
+               })
+    }
+    
     static func setLocationNotification(){
         
         let center = UNUserNotificationCenter.current()
