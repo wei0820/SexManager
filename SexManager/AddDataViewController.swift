@@ -66,10 +66,30 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
 
 
         }
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder() //要求離開我們的Responder
-        return true
-    }
+    //_ textField
+   // 開始進入編輯狀態
+       func textFieldDidBeginEditing(_ textField: UITextField){
+       }
+    
+       // 可能進入結束編輯狀態
+       func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+    
+           return true
+       }
+    
+       // 結束編輯狀態(意指完成輸入或離開焦點)
+       func textFieldDidEndEditing(_ textField: UITextField) {
+        mTimeLabel.text = textField.text!
+       }
+    
+       // 按下Return後會反應的事件
+       func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           //利用此方式讓按下Return後會Toogle 鍵盤讓它消失
+           textField.resignFirstResponder()
+        mTimeLabel.text = textField.text!
+
+           return false
+       }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
