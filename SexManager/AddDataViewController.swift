@@ -66,7 +66,6 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         mTimeText.returnKeyType = .done
         mTimeText.keyboardAppearance = .alert
         mTimeText.delegate = self
-         
         
 
 
