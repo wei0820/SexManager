@@ -11,7 +11,7 @@ import GoogleMobileAds
 import Firebase
 import FacebookCore
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenterDelegate{
 
     var window: UIWindow?
 
@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                       print("不允許")
                   }
               })
+        UNUserNotificationCenter.current().delegate = self 
+
         return true
     }
 
@@ -57,6 +59,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              annotation: annotation
          )
      }
-
+    // 在前景收到通知時所觸發的 function
+     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+         print("在前景收到通知...")
+         completionHandler([.badge, .sound, .alert])
+     }
 }
 

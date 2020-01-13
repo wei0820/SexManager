@@ -44,6 +44,7 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
           }
       }
     @IBAction func addButton(_ sender: Any) {
+        NotificationManager.setTimeNotification()
     }
     var type = ["10-20", "20-30", "30-40"]
     var place = ["Male", "Female"]

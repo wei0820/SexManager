@@ -25,7 +25,7 @@ class NotificationManager{
         content.badge = 1
         content.sound = .default
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: false)
         
         let request = UNNotificationRequest(identifier: "notification", content: content, trigger: trigger)
         
