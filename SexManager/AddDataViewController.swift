@@ -60,30 +60,19 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         mTypePicker.delegate = self
         mPlacePicker.dataSource = self
         mTypePicker.dataSource = self
-        mTimeText.keyboardType = .numberPad
         mTimeText.borderStyle = .roundedRect
-        mTimeText.clearButtonMode = .whileEditing
-        mTimeText.returnKeyType = .done
-        mTimeText.keyboardAppearance = .alert
         mTimeText.delegate = self
-        
+        mTimeText.keyboardType = .numberPad
 
 
         }
-    
-
-       // 結束編輯狀態(意指完成輸入或離開焦點)
-       func textFieldDidEndEditing(textField: UITextField) {
-        print("textFieldDidEndEditing:" + textField.text!)
-       }
-    
-       // 按下Return後會反應的事件
-       func textFieldShouldReturn(textField: UITextField) -> Bool {
-           //利用此方式讓按下Return後會Toogle 鍵盤讓它消失
-           textField.resignFirstResponder()
-           print("按下Return")
-           return false
-       }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() //要求離開我們的Responder
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     func shaerLine(){
         let message: String! = "法蘭克： 大家午安"

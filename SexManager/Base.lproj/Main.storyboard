@@ -185,7 +185,10 @@
                                     <constraint firstAttribute="width" constant="343" id="eDS-Im-sV7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zth-Hg-uTf" id="WzG-ap-IBc"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3k-SO-MlM">
                                 <rect key="frame" x="122" y="525" width="131" height="30"/>
@@ -262,7 +265,7 @@
                         <outlet property="mPlaceLabel" destination="TXt-iP-H2V" id="Fph-5C-iJR"/>
                         <outlet property="mPlacePicker" destination="0bD-2j-Zxm" id="LBH-yD-fTq"/>
                         <outlet property="mTimeLabel" destination="wge-uN-8OW" id="bVq-yr-4zL"/>
-                        <outlet property="mTimeText" destination="jSf-iL-heM" id="U2P-7S-4Bb"/>
+                        <outlet property="mTimeText" destination="jSf-iL-heM" id="5wE-vB-bgh"/>
                         <outlet property="mTypeLabel" destination="Agb-XY-Ohy" id="Nc7-aD-IZs"/>
                         <outlet property="mTypePicker" destination="Z5w-fi-VP3" id="OW5-e7-Vq1"/>
                     </connections>

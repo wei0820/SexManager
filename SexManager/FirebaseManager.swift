@@ -20,9 +20,6 @@ class FirebaseManager {
            let reference: DatabaseReference! = Database.database().reference().child("movieReviews").child(id as! String)
            let childRef = reference.childByAutoId() // 隨機生成的節點唯一識別碼，用來當儲存時的key值
            let dateReviewReference = reference.child(DateManager.getDateString2())
-
-       
-           
            // 新增節點資料
                var dateReview: [String : AnyObject] = [String : AnyObject]()
                dateReview["Id"] = id as AnyObject
