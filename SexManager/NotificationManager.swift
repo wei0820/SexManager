@@ -10,8 +10,11 @@ import Foundation
 import NotificationCenter
 import CoreLocation
 class NotificationManager{
+
     
     static func setTimeNotification(){
+        let appName = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String
+
         /*
          UNTimeIntervalNotificationTrigger = 每幾秒發送。
          UNCalendarNotificationTrigger => 指定日期發送。
@@ -19,7 +22,7 @@ class NotificationManager{
          UNPushNotificationTrigger => 從後台發送。
          */
         let content = UNMutableNotificationContent()
-        content.title = "title：測試本地通知"
+        content.title = appName!
         content.subtitle = "subtitle：法蘭克"
         content.body = "body：法蘭克的 iOS 世界"
         content.badge = 1
@@ -36,8 +39,10 @@ class NotificationManager{
     
    static func addPhotoNotification(){
         
+    let appName = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String
+
         let content = UNMutableNotificationContent()
-               content.title = "title：測試本地通知"
+               content.title = appName!
                content.subtitle = "subtitle：法蘭克"
                content.body = "body：法蘭克的IOS世界"
                content.badge = 1
