@@ -51,13 +51,12 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         NotificationManager.addPhotoNotification()
     }
     var type = ["10-20", "20-30", "30-40"]
-    var place = ["Male", "Female"]
+    var place = ["臥室", "浴室", "陽台","客廳"]
     var typeString = ""
     var placeString  = ""
     var timeString = ""
     @IBOutlet weak var mTypeLabel: UILabel!
     @IBOutlet weak var mPlaceLabel: UILabel!
-    
     @IBOutlet weak var mTimeLabel: UILabel!
     @IBOutlet weak var mTimeText: UITextField!
     @IBOutlet weak var mPlacePicker: UIPickerView!
