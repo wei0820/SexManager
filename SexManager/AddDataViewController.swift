@@ -37,17 +37,24 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
       func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
           if pickerView == mTypePicker {
             mTypeLabel.text = self.type[row]
+            typeString = self.type[row]
             
           } else if pickerView == mPlacePicker {
             mPlaceLabel.text = self.place[row]
+            placeString = self.place[row]
+            
             
           }
       }
     @IBAction func addButton(_ sender: Any) {
+        FirebaseManager.addFireBaseDate(min: timeString, Type: typeString, place: placeString)
         NotificationManager.addPhotoNotification()
     }
     var type = ["10-20", "20-30", "30-40"]
+    var typeString = ""
     var place = ["Male", "Female"]
+    var placeString  = ""
+    var timeString = ""
     @IBOutlet weak var mTypeLabel: UILabel!
     @IBOutlet weak var mPlaceLabel: UILabel!
     
@@ -81,6 +88,7 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
        // 結束編輯狀態(意指完成輸入或離開焦點)
        func textFieldDidEndEditing(_ textField: UITextField) {
         mTimeLabel.text = textField.text!
+        timeString = textField.text!
        }
     
        // 按下Return後會反應的事件

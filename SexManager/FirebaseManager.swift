@@ -12,7 +12,7 @@ import Firebase
 class FirebaseManager {
     static let userDefaults = UserDefaults.standard
 
-   static  func  addFireBaseDate(min: String , Type:String){
+    static  func  addFireBaseDate(min: String , Type:String,place : String){
            var  id = userDefaults.value(forKey: "token")
            if ( id == nil){
               id =  UiManager.getUUID()
@@ -25,6 +25,8 @@ class FirebaseManager {
                dateReview["Id"] = id as AnyObject
                dateReview["Minute"] = min  as AnyObject
                dateReview["Type"] = Type as AnyObject
+                dateReview["Place"] = place as AnyObject
+
            dateReview["createDate"] = DateManager.getDateString2() as AnyObject
            dateReviewReference.updateChildValues(dateReview) { (err, ref) in
                if err != nil{
@@ -37,7 +39,7 @@ class FirebaseManager {
 
            
        }
-    func SearchDatabase(){
+  static  func SearchDatabase(){
         
         var  id = FirebaseManager.userDefaults.value(forKey: "token")
                if ( id == nil){
@@ -55,7 +57,7 @@ class FirebaseManager {
         }, withCancel: nil)
     }
     
-    func DeleteDatabase(){
+  static  func DeleteDatabase(){
         // 刪除節點資料
         
         var  id = FirebaseManager.userDefaults.value(forKey: "token")
