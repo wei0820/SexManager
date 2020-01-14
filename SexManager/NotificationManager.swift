@@ -12,7 +12,7 @@ import CoreLocation
 class NotificationManager{
 
     
-    static func setTimeNotification(){
+    static func setTimeNotification(body :String){
         let appName = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String
 
         /*
@@ -24,7 +24,7 @@ class NotificationManager{
         let content = UNMutableNotificationContent()
         content.title = appName!
         content.subtitle =  DateManager.getDateString2()
-        content.body = "body：法蘭克的 iOS 世界"
+        content.body = body
         content.badge = 1
         content.sound = .default
         
