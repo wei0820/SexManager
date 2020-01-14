@@ -17,7 +17,7 @@ class FirebaseManager {
            if ( id == nil){
               id =  UiManager.getUUID()
            }
-           let reference: DatabaseReference! = Database.database().reference().child("movieReviews").child(id as! String)
+           let reference: DatabaseReference! = Database.database().reference().child("Reviews").child(id as! String)
            let childRef = reference.childByAutoId() // 隨機生成的節點唯一識別碼，用來當儲存時的key值
            let dateReviewReference = reference.child(DateManager.getDateString2())
            // 新增節點資料
@@ -38,8 +38,13 @@ class FirebaseManager {
            
        }
     func SearchDatabase(){
+        
+        var  id = FirebaseManager.userDefaults.value(forKey: "token")
+               if ( id == nil){
+                  id =  UiManager.getUUID()
+               }
         // 查詢節點資料
-        Database.database().reference().child("movieReviews").child("userId-00001").observe(.childAdded, with: {
+        Database.database().reference().child("Reviews").child(id as! String).observe(.childAdded, with: {
             (snapshot) in
             // childAdded逐筆呈現
             if let dictionaryData = snapshot.value as? [String: AnyObject]{
@@ -52,7 +57,12 @@ class FirebaseManager {
     
     func DeleteDatabase(){
         // 刪除節點資料
-        Database.database().reference().child("movieReviews").child("userId-00001").removeValue { (error, ref) in
+        
+        var  id = FirebaseManager.userDefaults.value(forKey: "token")
+               if ( id == nil){
+                  id =  UiManager.getUUID()
+               }
+        Database.database().reference().child("Reviews").child(id as! String).removeValue { (error, ref) in
                   if error != nil{
                       print(error!)
                       return
