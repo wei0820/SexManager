@@ -51,8 +51,8 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         NotificationManager.addPhotoNotification()
     }
     var type = ["10-20", "20-30", "30-40"]
-    var typeString = ""
     var place = ["Male", "Female"]
+    var typeString = ""
     var placeString  = ""
     var timeString = ""
     @IBOutlet weak var mTypeLabel: UILabel!
