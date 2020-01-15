@@ -23,6 +23,9 @@ class ViewController: mBasicViewController {
        
    
     }
+    @IBAction func setting_btn(_ sender: Any) {
+        setJump(type: "setting")
+    }
     @IBAction func chart(_ sender: Any) {
         setJump(type: "chart")
     }

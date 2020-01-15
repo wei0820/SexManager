@@ -56,6 +56,17 @@
                                     <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhG-tM-Iu4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGg-Vl-gwh">
+                                <rect key="frame" x="37" y="471" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SnC-ay-Un8"/>
+                                    <constraint firstAttribute="width" constant="300" id="yjQ-qJ-bOu"/>
+                                </constraints>
+                                <state key="normal" title="設置中心"/>
+                                <connections>
+                                    <action selector="setting_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXJ-34-umi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -66,12 +77,15 @@
                             <constraint firstItem="vbg-m8-KBc" firstAttribute="top" secondItem="jEx-r5-7Bs" secondAttribute="bottom" constant="8" id="OMF-87-7Jv"/>
                             <constraint firstItem="LLY-6H-FMu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="OZP-ic-Ndc"/>
                             <constraint firstItem="atI-No-QxF" firstAttribute="centerX" secondItem="vbg-m8-KBc" secondAttribute="centerX" id="OcJ-kz-cr9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bGg-Vl-gwh" secondAttribute="trailing" constant="38" id="PoW-2g-LKO"/>
                             <constraint firstItem="jEx-r5-7Bs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="XqY-xN-rZK"/>
                             <constraint firstItem="atI-No-QxF" firstAttribute="centerX" secondItem="jEx-r5-7Bs" secondAttribute="centerX" id="cZx-Ke-cKl"/>
                             <constraint firstItem="jEx-r5-7Bs" firstAttribute="top" secondItem="atI-No-QxF" secondAttribute="bottom" constant="8" id="j9x-dR-Fcd"/>
                             <constraint firstItem="jEx-r5-7Bs" firstAttribute="top" secondItem="atI-No-QxF" secondAttribute="bottom" constant="8" id="jdq-nF-D6g"/>
+                            <constraint firstItem="bGg-Vl-gwh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="snn-8N-pfL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jEx-r5-7Bs" secondAttribute="trailing" constant="38" id="tGf-Eg-oBP"/>
                             <constraint firstItem="LLY-6H-FMu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="vae-jD-M9E"/>
+                            <constraint firstItem="bGg-Vl-gwh" firstAttribute="top" secondItem="vbg-m8-KBc" secondAttribute="bottom" constant="8" id="xZA-B0-ZCQ"/>
                             <constraint firstItem="atI-No-QxF" firstAttribute="top" secondItem="LLY-6H-FMu" secondAttribute="bottom" constant="37" id="xjF-Hz-00U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -125,6 +139,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZg-mT-DM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1151.2" y="247.82608695652175"/>
+        </scene>
+        <!--Setting Center View Controller-->
+        <scene sceneID="IIa-N0-tEG">
+            <objects>
+                <viewController storyboardIdentifier="setting" id="rbe-rb-QLF" customClass="SettingCenterViewController" customModule="SexManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="STt-B3-k1N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2VZ-MI-hhQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v33-pY-cra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1889" y="-1393"/>
         </scene>
         <!--Add Data View Controller-->
         <scene sceneID="LeR-Wm-k7h">
