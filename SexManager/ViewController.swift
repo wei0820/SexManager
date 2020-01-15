@@ -15,6 +15,12 @@ class ViewController: mBasicViewController {
         super.viewDidLoad()
         FirebaseManager.SearchDatabase()
         // Do any additional setup after loading the view.
+        for array in  userDefaults.array(forKey: "minArray")!{
+            print("array",array)
+
+        }
+       
+       
    
     }
     @IBAction func chart(_ sender: Any) {

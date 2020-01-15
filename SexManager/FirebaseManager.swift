@@ -40,7 +40,7 @@ class FirebaseManager {
            
        }
   static  func SearchDatabase(){
-        
+    var minarray =  Array<String>()
         var  id = FirebaseManager.userDefaults.value(forKey: "token")
                if ( id == nil){
                   id =  UiManager.getUUID()
@@ -50,9 +50,13 @@ class FirebaseManager {
             (snapshot) in
         // childAdded逐筆呈現
                  if let dictionaryData = snapshot.value as? [String: AnyObject]{
-                    print(dictionaryData["Type"])
+                    print(dictionaryData["Minute"])
+                    minarray.append(dictionaryData["Minute"] as! String)
+
                 
                  }
+        userDefaults.set(minarray, forKey: "minArray")
+
             
         }, withCancel: nil)
     }
