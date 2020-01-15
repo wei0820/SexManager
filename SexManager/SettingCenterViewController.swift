@@ -9,7 +9,8 @@
 import UIKit
 
 class SettingCenterViewController: mBasicViewController {
-
+    var placeArray = Array<String>()
+    var TypeArray = Array<String>()
     override func viewDidLoad() {
         super.viewDidLoad()
 
