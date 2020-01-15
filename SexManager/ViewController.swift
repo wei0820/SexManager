@@ -13,7 +13,7 @@ class ViewController: mBasicViewController {
     @IBOutlet weak var descriptionbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        LocationManager.init().setLocation()
+        FirebaseManager.SearchDatabase()
         // Do any additional setup after loading the view.
    
     }

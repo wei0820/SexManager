@@ -46,13 +46,13 @@ class FirebaseManager {
                   id =  UiManager.getUUID()
                }
         // 查詢節點資料
-        Database.database().reference().child("Reviews").child(id as! String).observe(.childAdded, with: {
+    Database.database().reference().child("Reviews").child(id as! String).observe(.childAdded, with: {
             (snapshot) in
-            // childAdded逐筆呈現
-            if let dictionaryData = snapshot.value as? [String: AnyObject]{
-                print(dictionaryData)
-                print(snapshot.key)
-            }
+        // childAdded逐筆呈現
+                 if let dictionaryData = snapshot.value as? [String: AnyObject]{
+                    print(dictionaryData["Type"])
+                
+                 }
             
         }, withCancel: nil)
     }
