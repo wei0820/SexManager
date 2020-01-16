@@ -39,5 +39,22 @@ class SettingCenterViewController: mBasicViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func checkData(){
+        
+        if(userDefaults.array(forKey: "typeArray") != nil){
+            var typeNum : Int = userDefaults.array(forKey: "typeArray")!.count
+            
+            typeLabel.text = "目前數量：" + String(typeNum)
+        }
+        if(userDefaults.array(forKey: "placeArray") != nil ){
+            var placenum : Int = userDefaults.array(forKey: "placeArray")!.count
+            placeLabel.text = "目前數量：" + String(placenum)
+            
+        }
+
+        
+        
+    }
 
 }
