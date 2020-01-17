@@ -64,5 +64,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
          print("在前景收到通知...")
          completionHandler([.badge, .sound, .alert])
      }
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        //從後臺到前景
+        
+        
+    }
 }
 
