@@ -73,7 +73,6 @@ class FirebaseManager {
                       print(error!)
                       return
                   }
-                  
                   print("remove data success...")
               }
     }

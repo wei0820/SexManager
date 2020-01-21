@@ -24,6 +24,9 @@ class SettingCenterViewController: mBasicViewController {
     @IBOutlet weak var typeLabel: UILabel!
     
     @IBAction func exit_btn(_ sender: Any) {
+        dissmissView()
+        
+        
     }
     @IBOutlet weak var placeText: UITextField!
     
