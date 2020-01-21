@@ -112,7 +112,18 @@ class SettingCenterViewController: mBasicViewController ,UITextFieldDelegate{
             if(textField == typeText){
                 print("typeText")
                 print(typeText.text)
+                if(userDefaults.array(forKey: "typeArray") != nil ){
+                             TypeArray = userDefaults.array(forKey: "typeArray") as! [String]
+                             TypeArray.append(typeText.text!)
+                             userDefaults.set(TypeArray, forKey: "typeArray")
 
+                             for s in TypeArray{
+                                 print(s)
+                             }
+                         }else{
+                             TypeArray.append(typeText.text!)
+                             userDefaults.set(TypeArray, forKey: "typeArray")
+                         }
                 
             }
             
