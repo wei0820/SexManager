@@ -216,9 +216,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="typeText:" destination="rbe-rb-QLF" eventType="editingDidEnd" id="qZO-mi-o9n"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of2-rR-COq">
                                 <rect key="frame" x="16" y="312" width="343" height="30"/>
