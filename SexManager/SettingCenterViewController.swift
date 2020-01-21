@@ -18,12 +18,20 @@ class SettingCenterViewController: mBasicViewController ,UITextFieldDelegate{
         typeText.delegate = self
         placeText.returnKeyType = .done
         typeText.returnKeyType = .done
+        placeText.clearButtonMode = .whileEditing
+        typeText.clearButtonMode = .whileEditing
+
 
         // Do any additional setup after loading the view.
     }
     @IBAction func addPlace_btn(_ sender: Any) {
+        placeText.resignFirstResponder()
+
     }
+    
     @IBAction func addType_btn(_ sender: Any) {
+        typeText.resignFirstResponder()
+
     }
     @IBOutlet weak var typeText: UITextField!
     @IBOutlet weak var typeLabel: UILabel!
@@ -82,6 +90,32 @@ class SettingCenterViewController: mBasicViewController ,UITextFieldDelegate{
        
           // 結束編輯狀態(意指完成輸入或離開焦點)
           func textFieldDidEndEditing(_ textField: UITextField) {
+            if(textField == placeText){
+                print("placeText")
+                print(placeText.text)
+                if(userDefaults.array(forKey: "placeArray") != nil ){
+                    placeArray = userDefaults.array(forKey: "placeArray") as! [String]
+                    placeArray.append(placeText.text!)
+                    userDefaults.set(placeArray, forKey: "placeArray")
+
+                    for s in placeArray{
+                        print(s)
+                    }
+                }else{
+                    placeArray.append(placeText.text!)
+                    userDefaults.set(placeArray, forKey: "placeArray")
+                }
+         
+                
+
+            }
+            if(textField == typeText){
+                print("typeText")
+                print(typeText.text)
+
+                
+            }
+            
           }
        
           // 按下Return後會反應的事件

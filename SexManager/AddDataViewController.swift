@@ -50,8 +50,8 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         FirebaseManager.addFireBaseDate(min: timeString, Type: typeString, place: placeString)
         NotificationManager.addPhotoNotification()
     }
-    var type = ["10-20", "20-30", "30-40"]
-    var place = ["臥室", "浴室", "陽台","客廳"]
+    var type =  Array<String> ()
+    var place  = Array<String>()
     var typeString = ""
     var placeString  = ""
     var timeString = ""
@@ -70,9 +70,28 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         mTimeText.borderStyle = .roundedRect
         mTimeText.delegate = self
         mTimeText.keyboardType = .numberPad
-
+        checkData()
 
         }
+    
+    func checkData(){
+        if(userDefaults.array(forKey: "placeArray") != nil){
+            place = userDefaults.array(forKey: "placeArray") as! [String]
+
+        }else{
+            place = ["浴室","客廳","房間"]
+        }
+        
+        if(userDefaults.array(forKey: "typeArray") != nil){
+            type = userDefaults.array(forKey: "typeArray") as! [String]
+            
+        }else{
+            type = ["10-20", "20-30", "30-40"]
+        }
+        
+
+        
+    }
     //_ textField
    // 開始進入編輯狀態
        func textFieldDidBeginEditing(_ textField: UITextField){
