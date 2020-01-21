@@ -56,6 +56,10 @@ class SettingCenterViewController: mBasicViewController ,UITextFieldDelegate{
     }
     */
     
+    @IBAction func clearbtn(_ sender: Any) {
+        placeArray.removeAll()
+        TypeArray.removeAll()
+    }
     func checkData(){
         
         if(userDefaults.array(forKey: "typeArray") != nil){
