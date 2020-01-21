@@ -59,6 +59,10 @@ class SettingCenterViewController: mBasicViewController ,UITextFieldDelegate{
     @IBAction func clearbtn(_ sender: Any) {
         placeArray.removeAll()
         TypeArray.removeAll()
+        typeLabel.text = "目前數量："
+        placeLabel.text = "目前數量："
+
+
     }
     func checkData(){
         
