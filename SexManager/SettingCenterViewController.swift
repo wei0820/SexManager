@@ -61,6 +61,9 @@ class SettingCenterViewController: mBasicViewController ,UITextFieldDelegate{
         TypeArray.removeAll()
         typeLabel.text = "目前數量："
         placeLabel.text = "目前數量："
+        userDefaults.set(TypeArray, forKey: "typeArray")
+        userDefaults.set(placeArray, forKey: "placeArray")
+
 
 
     }
