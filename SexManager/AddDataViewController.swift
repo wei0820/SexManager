@@ -63,6 +63,8 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
     @IBOutlet weak var mTypePicker: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkData()
+
         mPlacePicker.delegate = self
         mTypePicker.delegate = self
         mPlacePicker.dataSource = self
@@ -70,7 +72,6 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
         mTimeText.borderStyle = .roundedRect
         mTimeText.delegate = self
         mTimeText.keyboardType = .numberPad
-        checkData()
 
         }
     
