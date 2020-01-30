@@ -13,12 +13,6 @@ class ViewController: mBasicViewController {
     @IBOutlet weak var descriptionbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseManager.SearchDatabase()
-        // Do any additional setup after loading the view.
-        for array in  userDefaults.array(forKey: "minArray")!{
-            print("array",array)
-
-        }
        
        
    

@@ -50,7 +50,7 @@ class FirebaseManager {
             (snapshot) in
         // childAdded逐筆呈現
                  if let dictionaryData = snapshot.value as? [String: AnyObject]{
-                    print(dictionaryData["Minute"])
+                    print("Min",dictionaryData["Minute"])
                     minarray.append(dictionaryData["Minute"] as! String)
 
                 

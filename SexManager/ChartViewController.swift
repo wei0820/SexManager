@@ -16,6 +16,8 @@ class ChartViewController: mBasicViewController{
     var aaChartModel : AAChartModel!
     var dayArray = Array<String>()
     var dateArray = Array<String>()
+    var minArray = Array<String>()
+    var strArray = Array<Int>()
     @IBOutlet weak var exit: UIButton!
     @IBAction func tool(_ sender: Any) {
         self.setAlert()
@@ -23,14 +25,27 @@ class ChartViewController: mBasicViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        getData()
         // Do any additional setup after loading the view.
           for i in 1...DateManager.init().countOfDaysInCurrentMonth(){
             dayArray.append(String(i))
             
         }
+        
         initCharView()
 
  
+        
+    }
+    func getData(){
+        FirebaseManager.SearchDatabase()
+        for i in  userDefaults.array(forKey: "minArray")!{
+            minArray.append(i as! String)
+            print("minArray",i)
+            
+        }
+        strArray = minArray.map { Int($0)! }
+
         
     }
     func initCharView(){
@@ -57,7 +72,7 @@ class ChartViewController: mBasicViewController{
 //                       .data([3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]),
 //                       ])
             .series([AASeriesElement()
-                        .data([7.0, 6.9, 9.5, 14.5, 18.2])
+                        .data(strArray)
                         ])
                    .title("城市天氣變化")//圖表主標題
             .subtitle(DateManager.getDateString())//圖表副標題
