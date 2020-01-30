@@ -26,7 +26,7 @@ class FirebaseManager {
                dateReview["Minute"] = min  as AnyObject
                dateReview["Type"] = Type as AnyObject
                 dateReview["Place"] = place as AnyObject
-
+            dateReview["date"]  = DateManager.getDateforDate() as AnyObject
            dateReview["createDate"] = DateManager.getDateString2() as AnyObject
            dateReviewReference.updateChildValues(dateReview) { (err, ref) in
                if err != nil{
@@ -51,6 +51,7 @@ class FirebaseManager {
         // childAdded逐筆呈現
                  if let dictionaryData = snapshot.value as? [String: AnyObject]{
                     print("Min",dictionaryData["Minute"])
+                    print("createDate",dictionaryData["createDate"])
                     minarray.append(dictionaryData["Minute"] as! String)
 
                 

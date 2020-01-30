@@ -36,4 +36,14 @@ public class DateManager{
         
         return timeString
     }
+    
+    public static func getDateforDate() -> String {
+        
+        let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd"
+            // 取得現在日期資訊
+            let timeString = dateFormatter.string(from: Date())
+            return timeString
+        
+    }
 }

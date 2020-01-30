@@ -28,6 +28,9 @@ class ChartViewController: mBasicViewController{
         getData()
         // Do any additional setup after loading the view.
           for i in 1...DateManager.init().countOfDaysInCurrentMonth(){
+            print("Date",DateManager.init().countOfDaysInCurrentMonth())
+            print("Date",i)
+
             dayArray.append(String(i))
             
         }
