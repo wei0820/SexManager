@@ -14,11 +14,12 @@ class ChartViewController: mBasicViewController{
     var chartType: AAChartType!
     var aaChartView: AAChartView!
     var aaChartModel : AAChartModel!
+    private var aaChartModel2 = AAChartModel()
+
     var dayArray = Array<String>()
     var dateArray = Array<String>()
     var minArray = Array<String>()
     var strArray = Array<Int>()
-    var chartModelSeriesArray = 
     @IBOutlet weak var exit: UIButton!
     @IBAction func tool(_ sender: Any) {
         self.setAlert()
@@ -41,6 +42,8 @@ class ChartViewController: mBasicViewController{
         
     }
     func getData(){
+        minArray.removeAll()
+        dayArray.removeAll()
         FirebaseManager.SearchDatabase()
         for i in  userDefaults.array(forKey: "minArray")!{
             minArray.append(i as! String)
@@ -49,8 +52,14 @@ class ChartViewController: mBasicViewController{
         }
         strArray = minArray.map { Int($0)! }
         
+        for i in userDefaults.array(forKey: "dateArray")! {
+            dayArray.append(i as! String)
+        }
+        
         
     }
+    public var series: [AASeriesElement]?
+
     func initCharView(){
         aaChartView = AAChartView()
         let width = view.frame.size.width
@@ -61,8 +70,8 @@ class ChartViewController: mBasicViewController{
         aaChartView!.isClearBackgroundColor = true
         aaChartModel = AAChartModel().chartType(.line)
             .series([AASeriesElement()
-                        .data(strArray)
-                        ])
+            .data(strArray)
+            ])
                    .title("城市天氣變化")//圖表主標題
             .subtitle(DateManager.getDateString())//圖表副標題
                 .inverted(false)//是否翻轉圖形
@@ -71,7 +80,6 @@ class ChartViewController: mBasicViewController{
                 .tooltipValueSuffix("分鐘")//浮動提示框單位後綴
         .categories(dayArray)
         aaChartView?.aa_drawChartWithChartModel(aaChartModel)
-
         
 
         
@@ -94,13 +102,28 @@ class ChartViewController: mBasicViewController{
 
     func setAlert(){
         let controller = UIAlertController(title: "選單", message: "請選擇！", preferredStyle: .actionSheet)
-        let names = ["加入", "列表"]
+        let names = ["加入","更新", "列表"]
         for name in names {
            let action = UIAlertAction(title: name, style: .default) { (action) in
             if (action.title == "加入"){
                 self.setJump(type: "addData")
-            }
     
+                
+            }
+            if (action.title == "更新"){
+                self.getData()
+                
+                self.aaChartModel2.series([
+                AASeriesElement()
+                    .data(self.strArray)
+                    ,
+                    ])
+                    .categories(self.dayArray)
+
+                self.aaChartView?.aa_refreshChartWholeContentWithChartModel(self.aaChartModel2)
+                
+
+            }
            }
            controller.addAction(action)
         }
