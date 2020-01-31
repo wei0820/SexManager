@@ -18,6 +18,7 @@ class ChartViewController: mBasicViewController{
     var dateArray = Array<String>()
     var minArray = Array<String>()
     var strArray = Array<Int>()
+    var chartModelSeriesArray = 
     @IBOutlet weak var exit: UIButton!
     @IBAction func tool(_ sender: Any) {
         self.setAlert()
@@ -93,18 +94,13 @@ class ChartViewController: mBasicViewController{
 
     func setAlert(){
         let controller = UIAlertController(title: "選單", message: "請選擇！", preferredStyle: .actionSheet)
-        let names = ["加入","更新", "列表"]
+        let names = ["加入", "列表"]
         for name in names {
            let action = UIAlertAction(title: name, style: .default) { (action) in
             if (action.title == "加入"){
                 self.setJump(type: "addData")
+            }
     
-                
-            }
-            if (action.title == "更新"){
-                self.aaChartView?.aa_refreshChartWholeContentWithChartModel(self.aaChartModel)
-
-            }
            }
            controller.addAction(action)
         }
