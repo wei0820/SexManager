@@ -42,6 +42,7 @@ class FirebaseManager {
        }
   static  func SearchDatabase(){
     var minarray =  Array<String>()
+    var dateArray = Array<String>()
         var  id = FirebaseManager.userDefaults.value(forKey: "token")
                if ( id == nil){
                   id =  UiManager.getUUID()
@@ -54,10 +55,12 @@ class FirebaseManager {
                     print("Min",dictionaryData["Minute"])
                     print("date",dictionaryData["date"])
                     minarray.append(dictionaryData["Minute"] as! String)
+                    dateArray.append(dictionaryData["date"] as! String)
 
                 
                  }
         userDefaults.set(minarray, forKey: "minArray")
+        userDefaults.set(dateArray, forKey: "dateArray")
 
             
         }, withCancel: nil)
@@ -76,6 +79,7 @@ class FirebaseManager {
                       return
                   }
                   print("remove data success...")
+            
               }
     }
 }

@@ -27,13 +27,12 @@ class ChartViewController: mBasicViewController{
         super.viewDidLoad()
         getData()
         // Do any additional setup after loading the view.
-          for i in 1...DateManager.init().countOfDaysInCurrentMonth(){
-            print("Date",DateManager.init().countOfDaysInCurrentMonth())
-            print("Date",i)
-
-            dayArray.append(String(i))
-            
-        }
+//          for i in 1...DateManager.init().countOfDaysInCurrentMonth(){
+//            print("Date",DateManager.init().countOfDaysInCurrentMonth())
+//            print("Date",i)
+//
+//
+//        }
         
         initCharView()
 
@@ -48,7 +47,13 @@ class ChartViewController: mBasicViewController{
             
         }
         strArray = minArray.map { Int($0)! }
+        
+        for i in userDefaults.array(forKey: "dateArray")!{
+            dayArray.append(i as! String)
+            print("dateArray",i)
 
+        }
+        
         
     }
     func initCharView(){
