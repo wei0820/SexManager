@@ -40,7 +40,7 @@ public class DateManager{
     public static func getDateforDate() -> String {
         
         let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd"
+            dateFormatter.dateFormat = "MM/dd"
             // 取得現在日期資訊
             let timeString = dateFormatter.string(from: Date())
             return timeString

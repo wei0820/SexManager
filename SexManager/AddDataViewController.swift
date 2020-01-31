@@ -48,7 +48,8 @@ class AddDataViewController: mBasicViewController,UIPickerViewDelegate,UIPickerV
       }
     @IBAction func addButton(_ sender: Any) {
         FirebaseManager.addFireBaseDate(min: timeString, Type: typeString, place: placeString)
-        NotificationManager.addPhotoNotification()
+//        NotificationManager.addPhotoNotification()
+        dissmissView()
     }
     var type =  Array<String> ()
     var place  = Array<String>()
