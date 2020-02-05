@@ -72,7 +72,7 @@ class ChartViewController: mBasicViewController{
             .series([AASeriesElement()
             .data(strArray)
             ])
-                   .title("城市天氣變化")//圖表主標題
+                   .title("自我檢測表")//圖表主標題
             .subtitle(DateManager.getDateString())//圖表副標題
                 .inverted(false)//是否翻轉圖形
                 .yAxisTitle("分鐘")// Y 軸標題
