@@ -12,6 +12,9 @@ import GoogleSignIn
 import FacebookLogin
 import FacebookCore
 class MemberCenterViewController: mBasicViewController {
+    @IBAction func exit_btn(_ sender: Any) {
+        dissmissView()
+    }
     @IBOutlet weak var loginbtn: UIButton!
     var islogin :Bool = false
     

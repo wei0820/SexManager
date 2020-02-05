@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -104,14 +104,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LSe-pg-cm0">
-                                <rect key="frame" x="67.5" y="20" width="240" height="206"/>
+                                <rect key="frame" x="67.5" y="96" width="240" height="206"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="ETl-gi-MTm"/>
                                     <constraint firstAttribute="height" constant="206" id="j9G-sG-b6W"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRd-7u-dPj">
-                                <rect key="frame" x="67" y="318" width="241" height="30"/>
+                                <rect key="frame" x="67" y="436" width="241" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="B8J-8u-VPg"/>
                                     <constraint firstAttribute="width" constant="241" id="wkM-LA-Nxe"/>
@@ -121,14 +121,29 @@
                                     <action selector="login:" destination="C4I-8c-7lu" eventType="touchUpInside" id="dku-Nk-W0P"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmW-Y6-IG9">
+                                <rect key="frame" x="16" y="20" width="90" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="5Eq-uT-pZ9"/>
+                                    <constraint firstAttribute="width" constant="90" id="lLC-Of-Kkv"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="baseline_exit_to_app_black_18dp"/>
+                                <connections>
+                                    <action selector="exit_btn:" destination="C4I-8c-7lu" eventType="touchUpInside" id="VEg-Ca-hcJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="QRd-7u-dPj" firstAttribute="top" secondItem="LSe-pg-cm0" secondAttribute="bottom" constant="92" id="34b-II-NSI"/>
-                            <constraint firstItem="LSe-pg-cm0" firstAttribute="top" secondItem="hM2-CD-xqm" secondAttribute="top" constant="20" id="Cde-iy-6G6"/>
+                            <constraint firstItem="QRd-7u-dPj" firstAttribute="top" secondItem="LSe-pg-cm0" secondAttribute="bottom" constant="134" id="34b-II-NSI"/>
+                            <constraint firstItem="LSe-pg-cm0" firstAttribute="top" secondItem="hM2-CD-xqm" secondAttribute="top" constant="96" id="Cde-iy-6G6"/>
+                            <constraint firstItem="pmW-Y6-IG9" firstAttribute="top" secondItem="hM2-CD-xqm" secondAttribute="top" constant="20" id="CzO-Fr-7iu"/>
+                            <constraint firstItem="pmW-Y6-IG9" firstAttribute="top" secondItem="hM2-CD-xqm" secondAttribute="top" constant="20" id="Fd1-KC-PCV"/>
                             <constraint firstItem="QRd-7u-dPj" firstAttribute="leading" secondItem="hM2-CD-xqm" secondAttribute="leading" constant="67" id="MGs-LJ-msV"/>
+                            <constraint firstItem="pmW-Y6-IG9" firstAttribute="leading" secondItem="sFf-fD-CZy" secondAttribute="leadingMargin" id="Oy8-Cn-p8C"/>
                             <constraint firstItem="hM2-CD-xqm" firstAttribute="trailing" secondItem="QRd-7u-dPj" secondAttribute="trailing" constant="67" id="QP5-2f-fcm"/>
                             <constraint firstItem="LSe-pg-cm0" firstAttribute="centerX" secondItem="sFf-fD-CZy" secondAttribute="centerX" id="bHs-m3-MMy"/>
+                            <constraint firstItem="pmW-Y6-IG9" firstAttribute="leading" secondItem="hM2-CD-xqm" secondAttribute="leading" constant="16" id="dBJ-aI-rKA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hM2-CD-xqm"/>
                     </view>
