@@ -149,6 +149,7 @@
                     </view>
                     <connections>
                         <outlet property="loginbtn" destination="QRd-7u-dPj" id="h11-ta-TTV"/>
+                        <outlet property="photoimg" destination="LSe-pg-cm0" id="HL7-S7-vl2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZg-mT-DM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

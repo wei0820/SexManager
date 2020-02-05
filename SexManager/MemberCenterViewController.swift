@@ -25,6 +25,7 @@ class MemberCenterViewController: mBasicViewController {
         // Do any additional setup after loading the view.
         
     }
+    @IBOutlet weak var photoimg: UIImageView!
     
     @IBAction func login(_ sender: Any) {
         if (islogin == false){
@@ -70,6 +71,15 @@ class MemberCenterViewController: mBasicViewController {
                     print( Auth.auth().currentUser?.displayName)
                     print( Auth.auth().currentUser?.photoURL)
                     print("==============")
+                    
+                    DispatchQueue.global(qos: .userInitiated).async {
+                                       let imageData:NSData = NSData(contentsOf: (Auth.auth().currentUser?.photoURL)!)!
+                                       // When from background thread, UI needs to be updated on main_queue
+                                       DispatchQueue.main.async {
+                                           let image = UIImage(data: imageData as Data)
+                                           self.photoimg.image = image
+                                       }
+                                   }
                     self.loginbtn.setTitle("登出", for: .normal)
                     self.islogin = true
 
